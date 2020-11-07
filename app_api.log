@@ -1,0 +1,142 @@
+[36mINFO[0m[0000] Starting Server                              
+[36mINFO[0m[0000] Starting Server                              
+time="2020-11-05T20:19:34-08:00" level=info msg="Starting Server"
+time="2020-11-05T20:24:16-08:00" level=info msg="Starting Server"
+time="2020-11-05T20:24:41-08:00" level=info msg="Starting Server"
+time="2020-11-05T20:24:50-08:00" level=info msg="Starting Server"
+time="2020-11-05T20:25:14-08:00" level=info msg="Starting Server"
+time="2020-11-05T20:25:18-08:00" level=info msg="Starting Server"
+time="2020-11-05T20:38:50-08:00" level=info msg="Starting Server"
+time="2020-11-05T20:42:55-08:00" level=info msg="Starting Server"
+time="2020-11-05T20:42:57-08:00" level=info Request= RequestID= Response=success ResponseCode=200
+time="2020-11-05T20:43:20-08:00" level=info Request= RequestID= Response=success ResponseCode=200
+time="2020-11-05T20:43:20-08:00" level=info Request= RequestID= Response=success ResponseCode=200
+time="2020-11-05T20:43:21-08:00" level=info Request= RequestID= Response=success ResponseCode=200
+time="2020-11-05T20:43:22-08:00" level=info Request= RequestID= Response=success ResponseCode=200
+time="2020-11-05T20:43:22-08:00" level=info Request= RequestID= Response=success ResponseCode=200
+time="2020-11-05T20:46:18-08:00" level=info msg="Starting Server"
+time="2020-11-05T20:46:19-08:00" level=info Method=POST RemoteAddress="[::1]:56057" RequestID=65c974a6-ecba-4dc1-b4a8-a782e4daca15 URL=/vehicles
+time="2020-11-05T20:46:19-08:00" level=info Request=POST./vehicles RequestID=65c974a6-ecba-4dc1-b4a8-a782e4daca15 Response=success ResponseCode=200
+time="2020-11-05T20:46:31-08:00" level=info Method=POST RemoteAddress="[::1]:56059" RequestID=037888d8-1fb6-4791-ab4f-b6890abc31b7 URL=/vehicles
+time="2020-11-05T20:46:31-08:00" level=info Request=POST./vehicles RequestID=037888d8-1fb6-4791-ab4f-b6890abc31b7 Response=success ResponseCode=200
+time="2020-11-05T20:46:32-08:00" level=info Method=POST RemoteAddress="[::1]:56061" RequestID=6316d0db-9d7b-4e0c-9f9b-db3d2ec0db3f URL=/vehicles
+time="2020-11-05T20:46:32-08:00" level=info Request=POST./vehicles RequestID=6316d0db-9d7b-4e0c-9f9b-db3d2ec0db3f Response=success ResponseCode=200
+time="2020-11-05T20:46:32-08:00" level=info Method=POST RemoteAddress="[::1]:56063" RequestID=5d337945-98b1-4b0c-960f-70ae5c3f6128 URL=/vehicles
+time="2020-11-05T20:46:32-08:00" level=info Request=POST./vehicles RequestID=5d337945-98b1-4b0c-960f-70ae5c3f6128 Response=success ResponseCode=200
+time="2020-11-06T14:03:23-08:00" level=info msg="Starting Server"
+time="2020-11-06T14:03:23-08:00" level=fatal msg="web-server error:listen tcp :8003: bind: address already in use"
+time="2020-11-06T14:06:45-08:00" level=info msg="Starting Server"
+time="2020-11-06T14:06:45-08:00" level=fatal msg="web-server error:listen tcp :8003: bind: address already in use"
+time="2020-11-06T14:12:23-08:00" level=info msg="Starting Server"
+time="2020-11-06T14:13:19-08:00" level=info Method=GET RemoteAddress="[::1]:63877" RequestID=888787f4-a2a0-40e6-bf63-512994b9ec9f URL=/vehicles/1234
+time="2020-11-06T14:13:19-08:00" level=error Caller="Called from main.(*Env).getVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/handlers.go#74" ClientError="Vehicle ID cannot be empty" Error="Vehicle ID cannot be empty" ErrorCode=400 InternalError="Vehicle ID cannot be empty" Request=GET./vehicles/1234 RequestID=888787f4-a2a0-40e6-bf63-512994b9ec9f
+time="2020-11-06T14:13:19-08:00" level=error Caller="Called from main.(*Env).getVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/handlers.go#81" ClientError="Vehicle ID must be a valid integer" Error="Vehicle ID must be a valid integer" ErrorCode=400 InternalError="Vehicle ID must be a valid integer" Request=GET./vehicles/1234 RequestID=888787f4-a2a0-40e6-bf63-512994b9ec9f
+time="2020-11-06T14:13:19-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#82" ClientError="Failed to get vehicle" Error="json: Unmarshal(non-pointer gmapiconnector.GMVehicleData)" ErrorCode=500 InternalError="getVehicle: Failed to unmarshal GM vehicle result" Request=GET./vehicles/1234 RequestID=888787f4-a2a0-40e6-bf63-512994b9ec9f
+time="2020-11-06T14:13:43-08:00" level=info msg="Starting Server"
+time="2020-11-06T14:14:00-08:00" level=info Method=GET RemoteAddress="[::1]:63906" RequestID=8ee16179-1f31-448a-b40e-172222b9bab1 URL=/vehicles/1234
+time="2020-11-06T14:14:00-08:00" level=error Caller="Called from main.(*Env).getVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/handlers.go#74" ClientError="Vehicle ID cannot be empty" Error="Vehicle ID cannot be empty" ErrorCode=400 InternalError="Vehicle ID cannot be empty" Request=GET./vehicles/1234 RequestID=8ee16179-1f31-448a-b40e-172222b9bab1
+time="2020-11-06T14:16:30-08:00" level=info msg="Starting Server"
+time="2020-11-06T14:16:31-08:00" level=info Method=GET RemoteAddress="[::1]:63966" RequestID=324ec646-0bf7-4250-96a0-f0c004fbfa1c URL=/vehicles/1234
+time="2020-11-06T14:16:31-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#82" ClientError="Failed to get vehicle" Error="json: Unmarshal(non-pointer gmapiconnector.GMVehicleData)" ErrorCode=500 InternalError="getVehicle: Failed to unmarshal GM vehicle result" Request=GET./vehicles/1234 RequestID=324ec646-0bf7-4250-96a0-f0c004fbfa1c
+time="2020-11-06T14:30:09-08:00" level=info msg="Starting Server"
+time="2020-11-06T14:30:23-08:00" level=info Method=GET RemoteAddress="[::1]:64449" RequestID=e57e5060-a02f-4107-b8ea-3bfcc035b475 URL=/vehicles/1234
+time="2020-11-06T14:30:23-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#82" ClientError="Failed to get vehicle" Error="json: Unmarshal(non-pointer gmapiconnector.GMVehicleData)" ErrorCode=500 InternalError="getVehicle: Failed to unmarshal GM vehicle result" Request=GET./vehicles/1234 RequestID=e57e5060-a02f-4107-b8ea-3bfcc035b475
+time="2020-11-06T14:31:17-08:00" level=info msg="Starting Server"
+time="2020-11-06T14:31:19-08:00" level=info Method=GET RemoteAddress="[::1]:64493" RequestID=b059db0f-27ef-41cd-ae21-59d5d53a824f URL=/vehicles/1234
+time="2020-11-06T14:31:19-08:00" level=error Caller="Called from app_api/apis/vehicle.(*service).GetVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/apis/vehicle/vehicle.go#52" ClientError="Failed to get vehicle" Error="Invalid door count response from GM" ErrorCode=500 InternalError="getVehicle: Failed to get a valid doorCount from GM" Request=GET./vehicles/1234 RequestID=b059db0f-27ef-41cd-ae21-59d5d53a824f
+time="2020-11-06T14:32:54-08:00" level=info msg="Starting Server"
+time="2020-11-06T14:32:55-08:00" level=info Method=GET RemoteAddress="[::1]:64553" RequestID=19b6a6b2-87af-489d-813b-71afa994eae2 URL=/vehicles/1234
+time="2020-11-06T14:32:55-08:00" level=error Caller="Called from app_api/apis/vehicle.(*service).GetVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/apis/vehicle/vehicle.go#56" ClientError="Failed to get vehicle" Error="Invalid door count response from GM" ErrorCode=500 InternalError="getVehicle: Failed to get a valid doorCount from GM" Request=GET./vehicles/1234 RequestID=19b6a6b2-87af-489d-813b-71afa994eae2
+time="2020-11-06T14:33:27-08:00" level=info msg="Starting Server"
+time="2020-11-06T14:33:28-08:00" level=info Method=GET RemoteAddress="[::1]:64587" RequestID=9767a4dd-4379-41f2-a41b-b04b603ecc5f URL=/vehicles/1234
+time="2020-11-06T14:33:28-08:00" level=error Caller="Called from app_api/apis/vehicle.(*service).GetVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/apis/vehicle/vehicle.go#56" ClientError="Failed to get vehicle" Error="Invalid door count response from GM" ErrorCode=500 InternalError="getVehicle: Failed to get a valid doorCount from GM" Request=GET./vehicles/1234 RequestID=9767a4dd-4379-41f2-a41b-b04b603ecc5f
+time="2020-11-06T14:33:35-08:00" level=info msg="Starting Server"
+time="2020-11-06T14:33:36-08:00" level=info Method=GET RemoteAddress="[::1]:64596" RequestID=4de545e7-3cd0-4d41-9eb1-3c45ddde3ade URL=/vehicles/1234
+time="2020-11-06T14:33:36-08:00" level=error Caller="Called from app_api/apis/vehicle.(*service).GetVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/apis/vehicle/vehicle.go#56" ClientError="Failed to get vehicle" Error="Invalid door count response from GM" ErrorCode=500 InternalError="getVehicle: Failed to get a valid doorCount from GM" Request=GET./vehicles/1234 RequestID=4de545e7-3cd0-4d41-9eb1-3c45ddde3ade
+time="2020-11-06T14:34:03-08:00" level=info msg="Starting Server"
+time="2020-11-06T14:34:05-08:00" level=info Method=GET RemoteAddress="[::1]:64615" RequestID=a7e9f1ce-5b64-4865-a9a9-7451c674338f URL=/vehicles/1234
+time="2020-11-06T14:34:05-08:00" level=error Caller="Called from app_api/apis/vehicle.(*service).GetVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/apis/vehicle/vehicle.go#56" ClientError="Failed to get vehicle" Error="Invalid door count response from GM" ErrorCode=500 InternalError="getVehicle: Failed to get a valid doorCount from GM" Request=GET./vehicles/1234 RequestID=a7e9f1ce-5b64-4865-a9a9-7451c674338f
+time="2020-11-06T14:34:50-08:00" level=info msg="Starting Server"
+time="2020-11-06T14:34:52-08:00" level=info Method=GET RemoteAddress="[::1]:64647" RequestID=bc2ac26a-a206-482f-bda7-f63014197115 URL=/vehicles/1234
+time="2020-11-06T14:34:53-08:00" level=error Caller="Called from app_api/apis/vehicle.(*service).GetVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/apis/vehicle/vehicle.go#56" ClientError="Failed to get vehicle" Error="Invalid door count response from GM" ErrorCode=500 InternalError="getVehicle: Failed to get a valid doorCount from GM" Request=GET./vehicles/1234 RequestID=bc2ac26a-a206-482f-bda7-f63014197115
+time="2020-11-06T14:35:39-08:00" level=info msg="Starting Server"
+time="2020-11-06T14:35:39-08:00" level=info Method=GET RemoteAddress="[::1]:64680" RequestID=0db43eec-d693-4e3a-b260-b3e8baf6aa47 URL=/vehicles/1234
+time="2020-11-06T14:35:40-08:00" level=error Caller="Called from app_api/apis/vehicle.(*service).GetVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/apis/vehicle/vehicle.go#56" ClientError="Failed to get vehicle" Error="Invalid door count response from GM" ErrorCode=500 InternalError="getVehicle: Failed to get a valid doorCount from GM" Request=GET./vehicles/1234 RequestID=0db43eec-d693-4e3a-b260-b3e8baf6aa47
+time="2020-11-06T14:36:13-08:00" level=info msg="Starting Server"
+time="2020-11-06T14:36:14-08:00" level=info Method=GET RemoteAddress="[::1]:64700" RequestID=1ecd23fb-d99c-4528-b3a1-74f6d07cdf45 URL=/vehicles/1234
+time="2020-11-06T14:36:15-08:00" level=error Caller="Called from app_api/apis/vehicle.(*service).GetVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/apis/vehicle/vehicle.go#56" ClientError="Failed to get vehicle" Error="Invalid door count response from GM" ErrorCode=500 InternalError="getVehicle: Failed to get a valid doorCount from GM" Request=GET./vehicles/1234 RequestID=1ecd23fb-d99c-4528-b3a1-74f6d07cdf45
+time="2020-11-06T14:38:49-08:00" level=info msg="Starting Server"
+time="2020-11-06T14:38:51-08:00" level=info Method=GET RemoteAddress="[::1]:64788" RequestID=3be7eacd-eddd-4d98-96ff-9df232156bf2 URL=/vehicles/1234
+time="2020-11-06T14:38:52-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#89" ClientError="Failed to get vehicle" Error="json: cannot unmarshal string into Go struct field GMVehicleData.Status of type int64" ErrorCode=500 InternalError="getVehicle: Failed to unmarshal GM vehicle result" Request=GET./vehicles/1234 RequestID=3be7eacd-eddd-4d98-96ff-9df232156bf2
+time="2020-11-06T14:45:04-08:00" level=info msg="Starting Server"
+time="2020-11-06T14:45:05-08:00" level=info Method=GET RemoteAddress="[::1]:64978" RequestID=ce09da9b-c3f7-482c-847a-b83d83c2783b URL=/vehicles/1234
+time="2020-11-06T14:45:05-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#97" ClientError="Failed to parse status code" Error="strconv.ParseInt: parsing \"\": invalid syntax" ErrorCode=500 InternalError="Failed to parse status code" Request=GET./vehicles/1234 RequestID=ce09da9b-c3f7-482c-847a-b83d83c2783b
+time="2020-11-06T14:45:29-08:00" level=info msg="Starting Server"
+time="2020-11-06T14:45:30-08:00" level=info Method=GET RemoteAddress="[::1]:64997" RequestID=11d4e155-194c-4a64-b09f-bffe160aec93 URL=/vehicles/1234
+time="2020-11-06T14:45:30-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#97" ClientError="Failed to parse status code" Error="strconv.ParseInt: parsing \"\": invalid syntax" ErrorCode=500 InternalError="Failed to parse status code" Request=GET./vehicles/1234 RequestID=11d4e155-194c-4a64-b09f-bffe160aec93
+time="2020-11-06T14:46:29-08:00" level=info msg="Starting Server"
+time="2020-11-06T14:46:30-08:00" level=info Method=GET RemoteAddress="[::1]:65022" RequestID=d2ac9693-f780-4775-af61-032568ebe15d URL=/vehicles/1234
+time="2020-11-06T14:46:30-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#99" ClientError="Failed to parse status code" Error="strconv.ParseInt: parsing \"\": invalid syntax" ErrorCode=500 InternalError="Failed to parse status code" Request=GET./vehicles/1234 RequestID=d2ac9693-f780-4775-af61-032568ebe15d
+time="2020-11-06T14:47:49-08:00" level=info msg="Starting Server"
+time="2020-11-06T14:47:50-08:00" level=info Method=GET RemoteAddress="[::1]:65063" RequestID=9496679f-3dce-4631-a4ea-78f128ce155c URL=/vehicles/1234
+time="2020-11-06T14:47:51-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#100" ClientError="Failed to parse status code" Error="strconv.ParseInt: parsing \"\": invalid syntax" ErrorCode=500 InternalError="Failed to parse status code" Request=GET./vehicles/1234 RequestID=9496679f-3dce-4631-a4ea-78f128ce155c
+time="2020-11-06T14:53:12-08:00" level=info msg="Starting Server"
+time="2020-11-06T14:53:13-08:00" level=info Method=GET RemoteAddress="[::1]:65229" RequestID=766cbeca-f008-4241-bc28-31c1212fb664 URL=/vehicles/1234
+time="2020-11-06T14:53:13-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#109" ClientError="Failed to get vehicle" Error="Failed to GET vehicle from GM, non-200 response: Required field 'id' not found." ErrorCode=500 InternalError="Failed to get vehicle" Request=GET./vehicles/1234 RequestID=766cbeca-f008-4241-bc28-31c1212fb664
+time="2020-11-06T14:53:36-08:00" level=info msg="Starting Server"
+time="2020-11-06T14:53:37-08:00" level=info Method=GET RemoteAddress="[::1]:65256" RequestID=fbc0f0d4-d768-4c13-bf9b-c7e7f5a24a20 URL=/vehicles/1234
+time="2020-11-06T14:53:37-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#103" ClientError="Failed to get vehicle" Error="Failed to GET vehicle from GM, non-200 response: Required field 'id' not found." ErrorCode=500 InternalError="Failed to get vehicle" Request=GET./vehicles/1234 RequestID=fbc0f0d4-d768-4c13-bf9b-c7e7f5a24a20
+time="2020-11-06T14:54:58-08:00" level=info msg="Starting Server"
+time="2020-11-06T14:54:59-08:00" level=info Method=GET RemoteAddress="[::1]:65312" RequestID=d1225fa6-6c3f-4ee4-8336-6652b201a049 URL=/vehicles/1234
+time="2020-11-06T14:54:59-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#103" ClientError="Failed to get vehicle" Error="Failed to GET vehicle from GM, non-200 response: Required field 'id' not found.. Response code: 400" ErrorCode=500 InternalError="Failed to get vehicle" Request=GET./vehicles/1234 RequestID=d1225fa6-6c3f-4ee4-8336-6652b201a049
+time="2020-11-06T14:55:11-08:00" level=info msg="Starting Server"
+time="2020-11-06T14:55:12-08:00" level=info Method=GET RemoteAddress="[::1]:65325" RequestID=ba31ba55-cf2b-49bd-bc00-79e98e2ceff1 URL=/vehicles/1234
+time="2020-11-06T14:55:13-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#103" ClientError="Failed to get vehicle" Error="Failed to GET vehicle from GM, non-200 response: Required field 'id' not found. Response code: 400" ErrorCode=500 InternalError="Failed to get vehicle" Request=GET./vehicles/1234 RequestID=ba31ba55-cf2b-49bd-bc00-79e98e2ceff1
+time="2020-11-06T14:57:55-08:00" level=info msg="Starting Server"
+time="2020-11-06T14:57:57-08:00" level=info Method=GET RemoteAddress="[::1]:65407" RequestID=bbde22a3-d1ca-4227-8359-ea364a1b8530 URL=/vehicles/1234
+time="2020-11-06T14:57:57-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#103" ClientError="Failed to get vehicle" Error="Failed to GET vehicle from GM, non-200 response: Required field 'id' not found. Response code: 400" ErrorCode=500 InternalError="Failed to get vehicle" Request=GET./vehicles/1234 RequestID=bbde22a3-d1ca-4227-8359-ea364a1b8530
+time="2020-11-06T14:58:09-08:00" level=info msg="Starting Server"
+time="2020-11-06T14:58:10-08:00" level=info Method=GET RemoteAddress="[::1]:65416" RequestID=5bb3877f-ad29-425e-9d87-a42dbc134707 URL=/vehicles/1234
+time="2020-11-06T14:58:10-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#103" ClientError="Failed to get vehicle" Error="Failed to GET vehicle from GM, non-200 response: Required field 'id' not found. Response code: 400" ErrorCode=500 InternalError="Failed to get vehicle" Request=GET./vehicles/1234 RequestID=5bb3877f-ad29-425e-9d87-a42dbc134707
+time="2020-11-06T14:58:49-08:00" level=info msg="Starting Server"
+time="2020-11-06T14:58:50-08:00" level=info Method=GET RemoteAddress="[::1]:65440" RequestID=df97e84c-198a-4f07-b21b-8522c38f30e6 URL=/vehicles/1234
+time="2020-11-06T14:58:50-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#103" ClientError="Failed to get vehicle" Error="Failed to GET vehicle from GM, non-200 response: Required field 'id' not found. Response code: 400" ErrorCode=500 InternalError="Failed to get vehicle" Request=GET./vehicles/1234 RequestID=df97e84c-198a-4f07-b21b-8522c38f30e6
+time="2020-11-06T15:03:48-08:00" level=info msg="Starting Server"
+time="2020-11-06T15:03:49-08:00" level=info Method=GET RemoteAddress="[::1]:49218" RequestID=012d1dc3-76cc-4b76-99c0-7f33542d9248 URL=/vehicles/1234
+time="2020-11-06T15:03:49-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#89" ClientError="Failed to get vehicle" Error="json: cannot unmarshal object into Go struct field .data.vin of type string" ErrorCode=500 InternalError="getVehicle: Failed to unmarshal GM vehicle result" Request=GET./vehicles/1234 RequestID=012d1dc3-76cc-4b76-99c0-7f33542d9248
+time="2020-11-06T17:23:45-08:00" level=info msg="Starting Server"
+time="2020-11-06T17:23:48-08:00" level=info Method=GET RemoteAddress="[::1]:52660" RequestID=8648550e-47cd-47af-b402-5a77c6997db6 URL=/vehicles/1234
+time="2020-11-06T17:25:41-08:00" level=info Method=GET RemoteAddress="[::1]:52719" RequestID=d98cb121-3ec2-4162-ad05-defdd20b1b66 URL=/vehicles/1234
+time="2020-11-06T17:25:44-08:00" level=info msg="Starting Server"
+time="2020-11-06T17:25:46-08:00" level=info Method=GET RemoteAddress="[::1]:52727" RequestID=376cf289-f635-445d-98ce-53b704f8d8c0 URL=/vehicles/1234
+time="2020-11-06T17:26:06-08:00" level=info msg="Starting Server"
+time="2020-11-06T17:28:29-08:00" level=info msg="Starting Server"
+time="2020-11-06T17:28:31-08:00" level=info Method=GET RemoteAddress="[::1]:52818" RequestID=b77417a8-c990-407e-ad1c-c5c483d42ccc URL=/vehicles/1234
+time="2020-11-06T17:31:36-08:00" level=info msg="Starting Server"
+time="2020-11-06T17:31:41-08:00" level=info msg="Starting Server"
+time="2020-11-06T17:31:42-08:00" level=info Method=GET RemoteAddress="[::1]:52924" RequestID=3b25eb37-3130-4440-a256-de4131bc01af URL=/vehicles/1234
+time="2020-11-06T17:31:42-08:00" level=info Request=GET./vehicles/1234 RequestID=3b25eb37-3130-4440-a256-de4131bc01af Response=success ResponseCode=200
+time="2020-11-06T17:36:58-08:00" level=info msg="Starting Server"
+time="2020-11-06T17:36:59-08:00" level=info Method=GET RemoteAddress="[::1]:53082" RequestID=9085eb2f-e84b-43b2-a83b-543db0a4fce1 URL=/vehicles/1234
+time="2020-11-06T17:36:59-08:00" level=info Request=GET./vehicles/1234 RequestID=9085eb2f-e84b-43b2-a83b-543db0a4fce1 Response="{123123412412 Metallic Silver 4 v8}" ResponseCode=200
+time="2020-11-06T17:39:19-08:00" level=info msg="Starting Server"
+time="2020-11-06T17:39:20-08:00" level=info Method=GET RemoteAddress="[::1]:53169" RequestID=6c65699e-c4a8-45f9-b5d8-f60f291bb027 URL=/vehicles/1234
+time="2020-11-06T17:39:20-08:00" level=info Request=GET./vehicles/1234 RequestID=6c65699e-c4a8-45f9-b5d8-f60f291bb027 Response="{123123412412 Metallic Silver 4 v8}" ResponseCode=200
+time="2020-11-06T17:39:42-08:00" level=info msg="Starting Server"
+time="2020-11-06T17:39:43-08:00" level=info Method=GET RemoteAddress="[::1]:53181" RequestID=3616d5a1-f9d4-4e64-a6c0-0b564d630820 URL=/vehicles/1234
+time="2020-11-06T17:39:43-08:00" level=info Request=GET./vehicles/1234 RequestID=3616d5a1-f9d4-4e64-a6c0-0b564d630820 Response="{123123412412 Metallic Silver 4 v8}" ResponseCode=200
+time="2020-11-06T17:40:09-08:00" level=info msg="Starting Server"
+time="2020-11-06T17:40:10-08:00" level=info Method=GET RemoteAddress="[::1]:53193" RequestID=73903d7d-307d-4163-acab-62b1ae03ee35 URL=/vehicles/1234
+time="2020-11-06T17:40:10-08:00" level=info Request=GET./vehicles/1234 RequestID=73903d7d-307d-4163-acab-62b1ae03ee35 Response="{123123412412 Metallic Silver 4 v8}" ResponseCode=200
+time="2020-11-06T17:40:17-08:00" level=info msg="Starting Server"
+time="2020-11-06T17:40:21-08:00" level=info msg="Starting Server"
+time="2020-11-06T17:40:23-08:00" level=info Method=GET RemoteAddress="[::1]:53207" RequestID=1e10b42e-2db6-4fdc-aa33-8bb264b256e8 URL=/vehicles/1234
+time="2020-11-06T17:40:23-08:00" level=info Request=GET./vehicles/1234 RequestID=1e10b42e-2db6-4fdc-aa33-8bb264b256e8 Response="{123123412412 Metallic Silver 4 v8}" ResponseCode=200
+time="2020-11-06T17:41:09-08:00" level=info msg="Starting Server"
+time="2020-11-06T17:41:11-08:00" level=info Method=GET RemoteAddress="[::1]:53237" RequestID=8ab19bb5-2c3c-464c-b932-af58a7268fbf URL=/vehicles/1234
+time="2020-11-06T17:41:11-08:00" level=info Request=GET./vehicles/1234 RequestID=8ab19bb5-2c3c-464c-b932-af58a7268fbf Response="{123123412412 Metallic Silver 4 v8}" ResponseCode=200
+time="2020-11-06T17:41:55-08:00" level=info msg="Starting Server"
+time="2020-11-06T17:41:57-08:00" level=info Method=GET RemoteAddress="[::1]:53266" RequestID=3e67bde7-4966-46ca-8ded-a3afa097558f URL=/vehicles/1234
+time="2020-11-06T17:41:57-08:00" level=info Request=GET./vehicles/1234 RequestID=3e67bde7-4966-46ca-8ded-a3afa097558f Response="{123123412412 Metallic Silver 4 v8}" ResponseCode=200
+time="2020-11-06T17:43:57-08:00" level=info Method=GET RemoteAddress="[::1]:53321" RequestID=777800d8-2687-4e53-9f04-a8c9424dee5e URL=/vehicles/1235
+time="2020-11-06T17:43:58-08:00" level=info Request=GET./vehicles/1235 RequestID=777800d8-2687-4e53-9f04-a8c9424dee5e Response="{1235AZ91XP Forest Green 2 electric}" ResponseCode=200

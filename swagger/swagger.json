@@ -1,0 +1,126 @@
+{
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "schemes": [
+    "https"
+  ],
+  "swagger": "2.0",
+  "info": {
+    "description": "SmartCar's API",
+    "title": "SmartCat API",
+    "contact": {
+      "name": "Andy",
+      "email": "chaochaoqi@gmail.com"
+    },
+    "version": "0.1"
+  },
+  "host": "localhost:8003",
+  "basePath": "/",
+  "paths": {
+    "/vehicles/{vehicle_id}": {
+      "get": {
+        "description": "Returns stats for the requested vehicle",
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "schemes": [
+          "https"
+        ],
+        "tags": [
+          "Vehicles"
+        ],
+        "summary": "Returns stats for the requested vehicle",
+        "operationId": "GetVehicle",
+        "parameters": [
+          {
+            "type": "integer",
+            "description": "The vehicle ID number",
+            "name": "vehicle_id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Vehicle object.\n",
+            "schema": {
+              "$ref": "#/definitions/Vehicle"
+            }
+          },
+          "400": {
+            "description": "Bad request e.g. Invalid vehicle_id",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "example": "Bad Request: Vehicle not found"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "example": "Internal Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Vehicle": {
+      "description": "Vehicle response",
+      "type": "object",
+      "required": [
+        "vin",
+        "color",
+        "doorCount",
+        "driveTrain"
+      ],
+      "properties": {
+        "color": {
+          "description": "Color",
+          "type": "string",
+          "x-go-name": "Color",
+          "example": "Metallic Silver"
+        },
+        "doorCount": {
+          "description": "DoorCount",
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "DoorCount",
+          "example": 4
+        },
+        "driveTrain": {
+          "description": "DriveTrain",
+          "type": "string",
+          "x-go-name": "DriveTrain",
+          "example": "v8"
+        },
+        "vin": {
+          "description": "Vin",
+          "type": "string",
+          "x-go-name": "Vin",
+          "example": "1213231"
+        }
+      },
+      "x-go-package": "app_api/apis/vehicle"
+    }
+  }
+}
