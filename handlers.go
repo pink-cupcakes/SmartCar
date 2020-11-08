@@ -285,7 +285,7 @@ func (env *Env) getVehicleBatteryStatus(w http.ResponseWriter, r *http.Request) 
 //     description: >
 //       Vehicle object.
 //     schema:
-//       $ref: "#/definitions/Status"
+//       $ref: "#/definitions/EngineActionResponse"
 //   '400':
 //     description: "Bad request e.g. Invalid vehicle_id"
 //     schema:

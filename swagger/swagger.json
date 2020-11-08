@@ -62,7 +62,7 @@
               "properties": {
                 "message": {
                   "type": "string",
-                  "example": "Bad Request: Vehicle not found"
+                  "example": "Vehicle ID must be an integer"
                 }
               }
             }
@@ -123,7 +123,7 @@
               "properties": {
                 "message": {
                   "type": "string",
-                  "example": "Bad Request: Vehicle not found"
+                  "example": "Vehicle ID must be an integer"
                 }
               }
             }
@@ -187,7 +187,77 @@
               "properties": {
                 "message": {
                   "type": "string",
-                  "example": "Bad Request: Vehicle not found"
+                  "example": "Vehicle ID must be an integer"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "example": "Internal Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/vehicles/{vehicle_id}/engine": {
+      "post": {
+        "description": "Submits commands to the engine for the requested vehicle",
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "schemes": [
+          "https"
+        ],
+        "tags": [
+          "Vehicles"
+        ],
+        "summary": "Submits commands to the engine for the requested vehicle",
+        "operationId": "actionEngine",
+        "parameters": [
+          {
+            "type": "integer",
+            "description": "The vehicle ID number",
+            "name": "vehicle_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "description": "body parameters",
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/EngineActionRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Vehicle object.\n",
+            "schema": {
+              "$ref": "#/definitions/EngineActionResponse"
+            }
+          },
+          "400": {
+            "description": "Bad request e.g. Invalid vehicle_id",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "example": "Vehicle ID must be an integer"
                 }
               }
             }
@@ -248,7 +318,7 @@
               "properties": {
                 "message": {
                   "type": "string",
-                  "example": "Bad Request: Vehicle not found"
+                  "example": "Vehicle ID must be an integer"
                 }
               }
             }
@@ -306,6 +376,38 @@
           "type": "boolean",
           "x-go-name": "Locked",
           "example": false
+        }
+      },
+      "x-go-package": "app_api/apis/vehicle"
+    },
+    "EngineActionRequest": {
+      "description": "EngineActionRequest response",
+      "type": "object",
+      "required": [
+        "action"
+      ],
+      "properties": {
+        "action": {
+          "description": "Action",
+          "type": "string",
+          "x-go-name": "Action",
+          "example": "START"
+        }
+      },
+      "x-go-package": "app_api/apis/vehicle"
+    },
+    "EngineActionResponse": {
+      "description": "EngineActionResponse response",
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "description": "Status",
+          "type": "string",
+          "x-go-name": "Action",
+          "example": "success"
         }
       },
       "x-go-package": "app_api/apis/vehicle"

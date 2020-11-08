@@ -110,12 +110,26 @@ func (s *service) GetVehicleBattery(vehicleID int64) (res Battery, err *shared.A
 	return
 }
 
+// EngineActionRequest response
+//
+// swagger:model EngineActionRequest
 type EngineActionRequest struct {
-	Action string `json:"action" validate:"required,email,min=2,max=256"`
+	// Action
+	//
+	// required: true
+	// example: START
+	Action string `json:"action"`
 }
 
+// EngineActionResponse response
+//
+// swagger:model EngineActionResponse
 type EngineActionResponse struct {
-	Action string `json:"action"`
+	// Status
+	//
+	// required: true
+	// example: success
+	Action string `json:"status"`
 }
 
 // SendEngineAction ... attempts to send the client request to GM API /actionEngineService
@@ -127,8 +141,6 @@ func (s *service) SendEngineAction(vehicleID int64, engineAction EngineActionReq
 		action = gmConnector.ENGINE_START
 	case ENGINE_STOP:
 		action = gmConnector.ENGINE_STOP
-
-	// This should be an unreachable state given the validation but serves as an additional measure
 	default:
 		errorMessage := "Unsupported engine action option"
 		engineActionError := fmt.Errorf("Unsupported data type: %s", engineAction.Action)
