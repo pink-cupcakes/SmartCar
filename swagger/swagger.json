@@ -81,9 +81,252 @@
           }
         }
       }
+    },
+    "/vehicles/{vehicle_id}/battery": {
+      "get": {
+        "description": "Returns status of the battery for the requested vehicle",
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "schemes": [
+          "https"
+        ],
+        "tags": [
+          "Vehicles"
+        ],
+        "summary": "Returns status of the battery for the requested vehicle",
+        "operationId": "getVehicleBatteryStatus",
+        "parameters": [
+          {
+            "type": "integer",
+            "description": "The vehicle ID number",
+            "name": "vehicle_id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Vehicle object.\n",
+            "schema": {
+              "$ref": "#/definitions/Battery"
+            }
+          },
+          "400": {
+            "description": "Bad request e.g. Invalid vehicle_id",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "example": "Bad Request: Vehicle not found"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "example": "Internal Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/vehicles/{vehicle_id}/doors": {
+      "get": {
+        "description": "Returns status of the doors for the requested vehicle",
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "schemes": [
+          "https"
+        ],
+        "tags": [
+          "Vehicles"
+        ],
+        "summary": "Returns status of the doors for the requested vehicle",
+        "operationId": "getVehicleDoors",
+        "parameters": [
+          {
+            "type": "integer",
+            "description": "The vehicle ID number",
+            "name": "vehicle_id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Vehicle object.\n",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Door"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request e.g. Invalid vehicle_id",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "example": "Bad Request: Vehicle not found"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "example": "Internal Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/vehicles/{vehicle_id}/fuel": {
+      "get": {
+        "description": "Returns status of the fuel for the requested vehicle",
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "schemes": [
+          "https"
+        ],
+        "tags": [
+          "Vehicles"
+        ],
+        "summary": "Returns status of the fuel for the requested vehicle",
+        "operationId": "getVehicleFuelStatus",
+        "parameters": [
+          {
+            "type": "integer",
+            "description": "The vehicle ID number",
+            "name": "vehicle_id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Vehicle object.\n",
+            "schema": {
+              "$ref": "#/definitions/Fuel"
+            }
+          },
+          "400": {
+            "description": "Bad request e.g. Invalid vehicle_id",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "example": "Bad Request: Vehicle not found"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "example": "Internal Error"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "definitions": {
+    "Battery": {
+      "description": "Battery response",
+      "type": "object",
+      "required": [
+        "percentage"
+      ],
+      "properties": {
+        "percentage": {
+          "description": "Percentage",
+          "type": "number",
+          "format": "double",
+          "x-go-name": "Percentage",
+          "example": 44.3
+        }
+      },
+      "x-go-package": "app_api/apis/vehicle"
+    },
+    "Door": {
+      "description": "Door response",
+      "type": "object",
+      "required": [
+        "location",
+        "locked"
+      ],
+      "properties": {
+        "location": {
+          "description": "Location",
+          "type": "string",
+          "x-go-name": "Location",
+          "example": "frontLeft"
+        },
+        "locked": {
+          "description": "Locked",
+          "type": "boolean",
+          "x-go-name": "Locked",
+          "example": false
+        }
+      },
+      "x-go-package": "app_api/apis/vehicle"
+    },
+    "Fuel": {
+      "description": "Fuel response",
+      "type": "object",
+      "required": [
+        "percentage"
+      ],
+      "properties": {
+        "percentage": {
+          "description": "Percentage",
+          "type": "number",
+          "format": "double",
+          "x-go-name": "Percentage",
+          "example": 44.3
+        }
+      },
+      "x-go-package": "app_api/apis/vehicle"
+    },
     "Vehicle": {
       "description": "Vehicle response",
       "type": "object",

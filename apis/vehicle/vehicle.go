@@ -2,16 +2,26 @@ package vehicle
 
 import (
 	"errors"
+	"fmt"
+	"math"
 	"net/http"
 
 	"app_api/shared"
 	gmConnector "app_api/shared/gm"
 )
 
+const (
+	ENGINE_START = "START"
+	ENGINE_STOP  = "STOP"
+)
+
 // Service ... represents an instance of the vehicle package service interface
 type Service interface {
 	GetVehicle(vehicleID int64) (res Vehicle, err *shared.APIError)
-	GetVehicleDoors(vehicleID int64) (res []Door, err *shared.APIError)
+	GetVehicleDoors(vehicleID int64) (res []gmConnector.GMVehicleDoorData, err *shared.APIError)
+	GetVehicleFuel(vehicleID int64) (res Fuel, err *shared.APIError)
+	GetVehicleBattery(vehicleID int64) (res Battery, err *shared.APIError)
+	SendEngineAction(vehicleID int64, engineAction EngineActionRequest) (engineSubmissionStatus EngineActionResponse, err *shared.APIError)
 }
 
 // NewService ... returns an instance of the vehicle package service
@@ -57,9 +67,89 @@ func (s *service) GetVehicle(vehicleID int64) (res Vehicle, err *shared.APIError
 }
 
 // GetVehicleDoors ... returns the status of the doors for a given car
-func (s *service) GetVehicleDoors(vehicleID int64) (res []Door, err *shared.APIError) {
-	_, err = s.gm.GetVehicleDoors(vehicleID)
+func (s *service) GetVehicleDoors(vehicleID int64) (res []gmConnector.GMVehicleDoorData, err *shared.APIError) {
+	res, err = s.gm.GetVehicleDoors(vehicleID)
 	if err != nil {
+		return
+	}
+
+	return
+}
+
+// GetVehicleFuel ... returns the status of the fiel for a given car
+func (s *service) GetVehicleFuel(vehicleID int64) (res Fuel, err *shared.APIError) {
+	fuel, _, err := s.gm.GetVehicleEnergyStatus(vehicleID)
+	if err != nil {
+		return
+	}
+
+	if fuel == nil {
+		return
+	}
+
+	percentage := math.Round(*fuel*100) / 100
+	res.Percentage = &percentage
+
+	return
+}
+
+// GetVehicleBattery ... returns the status of the fiel for a given car
+func (s *service) GetVehicleBattery(vehicleID int64) (res Battery, err *shared.APIError) {
+	_, battery, err := s.gm.GetVehicleEnergyStatus(vehicleID)
+	if err != nil {
+		return
+	}
+
+	if battery == nil {
+		return
+	}
+
+	percentage := math.Round(*battery*100) / 100
+	res.Percentage = &percentage
+
+	return
+}
+
+type EngineActionRequest struct {
+	Action string `json:"action" validate:"required,email,min=2,max=256"`
+}
+
+type EngineActionResponse struct {
+	Action string `json:"action"`
+}
+
+// SendEngineAction ... attempts to send the client request to GM API /actionEngineService
+func (s *service) SendEngineAction(vehicleID int64, engineAction EngineActionRequest) (engineSubmissionStatus EngineActionResponse, err *shared.APIError) {
+	var action string
+
+	switch engineAction.Action {
+	case ENGINE_START:
+		action = gmConnector.ENGINE_START
+	case ENGINE_STOP:
+		action = gmConnector.ENGINE_STOP
+
+	// This should be an unreachable state given the validation but serves as an additional measure
+	default:
+		errorMessage := "Unsupported engine action option"
+		engineActionError := fmt.Errorf("Unsupported data type: %s", engineAction.Action)
+		err = shared.NewAPIError(http.StatusInternalServerError, engineActionError, errorMessage)
+		return
+	}
+
+	engineResponse, err := s.gm.SendVehicleEngineAction(vehicleID, action)
+	if err != nil {
+		return
+	}
+
+	switch engineResponse.Status {
+	case gmConnector.EXECUTED:
+		engineSubmissionStatus.Action = "success"
+	case gmConnector.FAILED:
+		engineSubmissionStatus.Action = "error"
+	default:
+		errorMessage := "Failed to read response from GM"
+		engineActionError := fmt.Errorf("Unsupported data type: %s", engineResponse.Status)
+		err = shared.NewAPIError(http.StatusInternalServerError, engineActionError, errorMessage)
 		return
 	}
 

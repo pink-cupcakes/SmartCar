@@ -52,10 +52,10 @@ func Initialize() {
 
 func (env *Env) initializeRoutes() {
 	r.HandleFunc("/vehicles/{vehicle_id}", env.getVehicle).Methods("GET")
-	r.HandleFunc("/vehicles/{vehicle_id}/doors", env.getVehicle).Methods("GET")
-	r.HandleFunc("/vehicles/{vehicle_id}/fuel", env.getVehicle).Methods("GET")
-	r.HandleFunc("/vehicles/{vehicle_id}/battery", env.getVehicle).Methods("GET")
-	r.HandleFunc("/vehicles/{vehicle_id}/engine", env.getVehicle).Methods("POST")
+	r.HandleFunc("/vehicles/{vehicle_id}/doors", env.getVehicleDoors).Methods("GET")
+	r.HandleFunc("/vehicles/{vehicle_id}/fuel", env.getVehicleFuelStatus).Methods("GET")
+	r.HandleFunc("/vehicles/{vehicle_id}/battery", env.getVehicleBatteryStatus).Methods("GET")
+	r.HandleFunc("/vehicles/{vehicle_id}/engine", env.actionEngine).Methods("POST")
 
 	r.Use(Logger)
 }

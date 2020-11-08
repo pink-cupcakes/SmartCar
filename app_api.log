@@ -140,3 +140,85 @@ time="2020-11-06T17:41:57-08:00" level=info Method=GET RemoteAddress="[::1]:5326
 time="2020-11-06T17:41:57-08:00" level=info Request=GET./vehicles/1234 RequestID=3e67bde7-4966-46ca-8ded-a3afa097558f Response="{123123412412 Metallic Silver 4 v8}" ResponseCode=200
 time="2020-11-06T17:43:57-08:00" level=info Method=GET RemoteAddress="[::1]:53321" RequestID=777800d8-2687-4e53-9f04-a8c9424dee5e URL=/vehicles/1235
 time="2020-11-06T17:43:58-08:00" level=info Request=GET./vehicles/1235 RequestID=777800d8-2687-4e53-9f04-a8c9424dee5e Response="{1235AZ91XP Forest Green 2 electric}" ResponseCode=200
+time="2020-11-07T10:28:19-08:00" level=info msg="Starting Server"
+time="2020-11-07T10:28:41-08:00" level=info Method=GET RemoteAddress="[::1]:64182" RequestID=3d73b606-c074-40f6-a799-bc3e6e9592e3 URL=/vehicles/1235/doors
+time="2020-11-07T10:28:41-08:00" level=info Request=GET./vehicles/1235/doors RequestID=3d73b606-c074-40f6-a799-bc3e6e9592e3 Response="{1235AZ91XP Forest Green 2 electric}" ResponseCode=200
+time="2020-11-07T10:29:15-08:00" level=info msg="Starting Server"
+time="2020-11-07T10:29:17-08:00" level=info Method=GET RemoteAddress="[::1]:64196" RequestID=c11b961a-0062-4e8a-ba9b-2e231922602f URL=/vehicles/1235/doors
+time="2020-11-07T10:29:17-08:00" level=info Request=GET./vehicles/1235/doors RequestID=c11b961a-0062-4e8a-ba9b-2e231922602f Response="[{frontRight false} {frontLeft true}]" ResponseCode=200
+time="2020-11-07T10:29:28-08:00" level=info msg="Starting Server"
+time="2020-11-07T10:29:30-08:00" level=info Method=GET RemoteAddress="[::1]:64210" RequestID=65f6d683-c743-413c-9cc6-25c84654ccbc URL=/vehicles/1235/doors
+time="2020-11-07T10:29:30-08:00" level=info Request=GET./vehicles/1235/doors RequestID=65f6d683-c743-413c-9cc6-25c84654ccbc Response="[{frontRight false} {frontLeft true}]" ResponseCode=200
+time="2020-11-07T10:29:45-08:00" level=info Method=GET RemoteAddress="[::1]:64221" RequestID=180df539-2ce3-443d-bcce-1c2578c88df5 URL=/vehicles/1235
+time="2020-11-07T10:29:45-08:00" level=info Request=GET./vehicles/1235 RequestID=180df539-2ce3-443d-bcce-1c2578c88df5 Response="{1235AZ91XP Forest Green 2 electric}" ResponseCode=200
+time="2020-11-07T10:29:49-08:00" level=info Method=GET RemoteAddress="[::1]:64225" RequestID=8ff50725-377e-405e-8cf3-a4dbf3aa23a9 URL=/vehicles/1235/doors
+time="2020-11-07T10:29:49-08:00" level=info Request=GET./vehicles/1235/doors RequestID=8ff50725-377e-405e-8cf3-a4dbf3aa23a9 Response="[{frontLeft false} {frontRight false}]" ResponseCode=200
+time="2020-11-07T13:32:45-08:00" level=info Method=GET RemoteAddress="[::1]:51525" RequestID=2e8d3783-6d63-46b7-b70e-b4f0b6ea6172 URL=/vehicles/1234/doors
+time="2020-11-07T13:32:50-08:00" level=info Request=GET./vehicles/1234/doors RequestID=2e8d3783-6d63-46b7-b70e-b4f0b6ea6172 Response="[{frontRight true} {backRight false} {frontLeft false} {backLeft true}]" ResponseCode=200
+time="2020-11-07T13:35:10-08:00" level=info Method=GET RemoteAddress="[::1]:51575" RequestID=ee06551f-049a-457d-b8d7-0cc0d8bfd6a6 URL=/vehicles/1234/doors
+time="2020-11-07T13:35:10-08:00" level=info Request=GET./vehicles/1234/doors RequestID=ee06551f-049a-457d-b8d7-0cc0d8bfd6a6 Response="[{backLeft false} {frontRight false} {backRight true} {frontLeft true}]" ResponseCode=200
+time="2020-11-07T13:35:34-08:00" level=info Method=GET RemoteAddress="[::1]:51589" RequestID=b4c80261-a338-4a5c-a0a7-23495c0dd74b URL=/vehicles/1234/doors
+time="2020-11-07T13:35:34-08:00" level=info Request=GET./vehicles/1234/doors RequestID=b4c80261-a338-4a5c-a0a7-23495c0dd74b Response="[{frontRight true} {backRight true} {backLeft true} {frontLeft true}]" ResponseCode=200
+time="2020-11-07T13:36:06-08:00" level=info Method=GET RemoteAddress="[::1]:51615" RequestID=0d7d6182-3108-46eb-80a7-076944ad7573 URL=/vehicles/1234/doors
+time="2020-11-07T13:36:06-08:00" level=info Request=GET./vehicles/1234/doors RequestID=0d7d6182-3108-46eb-80a7-076944ad7573 Response="[{frontRight true} {backLeft false} {frontLeft true} {backRight true}]" ResponseCode=200
+time="2020-11-07T14:40:27-08:00" level=info msg="Starting Server"
+time="2020-11-07T14:40:44-08:00" level=info Method=GET RemoteAddress="[::1]:52846" RequestID=b3832b6f-61aa-48cb-a1cf-f98d73f83308 URL=/vehicles/1234/fuel
+time="2020-11-07T14:40:49-08:00" level=info Request=GET./vehicles/1234/fuel RequestID=b3832b6f-61aa-48cb-a1cf-f98d73f83308 Response=48.17 ResponseCode=200
+time="2020-11-07T14:46:22-08:00" level=info msg="Starting Server"
+time="2020-11-07T14:46:24-08:00" level=info Method=GET RemoteAddress="[::1]:52907" RequestID=5713f481-5e2e-436e-b42b-9d396d28fe89 URL=/vehicles/1234/fuel
+time="2020-11-07T14:46:25-08:00" level=info Request=GET./vehicles/1234/fuel RequestID=5713f481-5e2e-436e-b42b-9d396d28fe89 Response="{31.09}" ResponseCode=200
+time="2020-11-07T14:46:30-08:00" level=info Method=GET RemoteAddress="[::1]:52910" RequestID=4a0e784e-a38a-45de-8fce-d57ec345e8b1 URL=/vehicles/1234/fuel
+time="2020-11-07T14:46:30-08:00" level=info Request=GET./vehicles/1234/fuel RequestID=4a0e784e-a38a-45de-8fce-d57ec345e8b1 Response="{83.63}" ResponseCode=200
+time="2020-11-07T14:46:32-08:00" level=info Method=GET RemoteAddress="[::1]:52913" RequestID=cdfbfd94-f36d-4eaa-95c3-9761110f62a2 URL=/vehicles/1234/fuel
+time="2020-11-07T14:46:32-08:00" level=info Request=GET./vehicles/1234/fuel RequestID=cdfbfd94-f36d-4eaa-95c3-9761110f62a2 Response="{51.02}" ResponseCode=200
+time="2020-11-07T14:46:33-08:00" level=info Method=GET RemoteAddress="[::1]:52915" RequestID=2ab111c2-52ff-4690-9186-eef988e62b90 URL=/vehicles/1234/fuel
+time="2020-11-07T14:46:33-08:00" level=info Request=GET./vehicles/1234/fuel RequestID=2ab111c2-52ff-4690-9186-eef988e62b90 Response="{81.67}" ResponseCode=200
+time="2020-11-07T14:46:34-08:00" level=info Method=GET RemoteAddress="[::1]:52917" RequestID=ff21ec79-1b34-4b92-a92e-bd4f5b39c860 URL=/vehicles/1234/fuel
+time="2020-11-07T14:46:34-08:00" level=info Request=GET./vehicles/1234/fuel RequestID=ff21ec79-1b34-4b92-a92e-bd4f5b39c860 Response="{34.6}" ResponseCode=200
+time="2020-11-07T14:46:35-08:00" level=info Method=GET RemoteAddress="[::1]:52919" RequestID=9138263d-7ffa-41c8-8bdb-a714c283ecb8 URL=/vehicles/1234/fuel
+time="2020-11-07T14:46:35-08:00" level=info Request=GET./vehicles/1234/fuel RequestID=9138263d-7ffa-41c8-8bdb-a714c283ecb8 Response="{21.22}" ResponseCode=200
+time="2020-11-07T14:46:36-08:00" level=info Method=GET RemoteAddress="[::1]:52921" RequestID=06416cdb-f9f3-4b1d-b256-8e6824865965 URL=/vehicles/1234/fuel
+time="2020-11-07T14:46:36-08:00" level=info Request=GET./vehicles/1234/fuel RequestID=06416cdb-f9f3-4b1d-b256-8e6824865965 Response="{77.99}" ResponseCode=200
+time="2020-11-07T14:46:48-08:00" level=info Method=GET RemoteAddress="[::1]:52928" RequestID=83e1ca5e-6104-4e8c-a191-91e1c3d4e921 URL=/vehicles/1234/fuel
+time="2020-11-07T14:46:48-08:00" level=info Request=GET./vehicles/1234/fuel RequestID=83e1ca5e-6104-4e8c-a191-91e1c3d4e921 Response="{84.77}" ResponseCode=200
+time="2020-11-07T14:58:47-08:00" level=info Method=GET RemoteAddress="[::1]:53000" RequestID=537e5ec0-85d6-4baf-88b1-7c9cd144379b URL=/vehicles/1234/fuel
+time="2020-11-07T14:58:47-08:00" level=info Request=GET./vehicles/1234/fuel RequestID=537e5ec0-85d6-4baf-88b1-7c9cd144379b Response="{6.21}" ResponseCode=200
+time="2020-11-07T15:04:49-08:00" level=info msg="Starting Server"
+time="2020-11-07T15:04:57-08:00" level=info Method=GET RemoteAddress="[::1]:53036" RequestID=02e14ea0-50f3-47d4-be02-06c992f33849 URL=/vehicles/1234/battery
+time="2020-11-07T15:04:57-08:00" level=info Request=GET./vehicles/1234/battery RequestID=02e14ea0-50f3-47d4-be02-06c992f33849 Response="{0}" ResponseCode=200
+time="2020-11-07T15:05:00-08:00" level=info Method=GET RemoteAddress="[::1]:53039" RequestID=ccc32e11-121e-4b52-b4ba-4455beaa4efe URL=/vehicles/1234/battery
+time="2020-11-07T15:05:00-08:00" level=info Request=GET./vehicles/1234/battery RequestID=ccc32e11-121e-4b52-b4ba-4455beaa4efe Response="{0}" ResponseCode=200
+time="2020-11-07T15:05:01-08:00" level=info Method=GET RemoteAddress="[::1]:53041" RequestID=9b10506a-f3b4-4fb8-a176-ad52944df17c URL=/vehicles/1234/battery
+time="2020-11-07T15:05:01-08:00" level=info Request=GET./vehicles/1234/battery RequestID=9b10506a-f3b4-4fb8-a176-ad52944df17c Response="{0}" ResponseCode=200
+time="2020-11-07T15:14:39-08:00" level=info msg="Starting Server"
+time="2020-11-07T15:14:41-08:00" level=info Method=GET RemoteAddress="[::1]:53093" RequestID=fc245736-795c-4a88-8fce-f980f53744e7 URL=/vehicles/1234/battery
+time="2020-11-07T15:18:23-08:00" level=info msg="Starting Server"
+time="2020-11-07T15:18:24-08:00" level=info Method=GET RemoteAddress="[::1]:53107" RequestID=50faf975-3768-4ec5-8763-51507896bd31 URL=/vehicles/1234/battery
+time="2020-11-07T15:18:24-08:00" level=info Request=GET./vehicles/1234/battery RequestID=50faf975-3768-4ec5-8763-51507896bd31 Response="{<nil>}" ResponseCode=200
+time="2020-11-07T15:18:39-08:00" level=info Method=GET RemoteAddress="[::1]:53111" RequestID=f188c1f5-c6b7-464a-8ab3-0139ad50c311 URL=/vehicles/1235/battery
+time="2020-11-07T15:18:39-08:00" level=info Request=GET./vehicles/1235/battery RequestID=f188c1f5-c6b7-464a-8ab3-0139ad50c311 Response="{0xc000019070}" ResponseCode=200
+time="2020-11-07T15:18:41-08:00" level=info Method=GET RemoteAddress="[::1]:53113" RequestID=ca413df6-b331-498e-bd8f-be673dd9f06e URL=/vehicles/1235/battery
+time="2020-11-07T15:18:41-08:00" level=info Request=GET./vehicles/1235/battery RequestID=ca413df6-b331-498e-bd8f-be673dd9f06e Response="{0xc0001923f8}" ResponseCode=200
+time="2020-11-07T15:18:56-08:00" level=info Method=GET RemoteAddress="[::1]:53118" RequestID=0e9a5ebb-8b2d-4613-8dc6-a071c1a2f986 URL=/vehicles/1235/fuel
+time="2020-11-07T15:18:56-08:00" level=info Request=GET./vehicles/1235/fuel RequestID=0e9a5ebb-8b2d-4613-8dc6-a071c1a2f986 Response="{<nil>}" ResponseCode=200
+time="2020-11-07T15:21:44-08:00" level=info msg="Starting Server"
+time="2020-11-07T15:21:46-08:00" level=info Method=GET RemoteAddress="[::1]:53145" RequestID=14144c52-3090-4bc1-80ad-1393e26339d1 URL=/vehicles/12354/fuel
+time="2020-11-07T15:21:46-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicleEnergyStatus; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#280" ClientError="Failed to get vehicle energy status" Error="Failed to GET vehicle from GM, non-200 response: Vehicle id: 12354 not found. Response code: 404" ErrorCode=500 InternalError="Failed to get vehicle energy status" Request=GET./vehicles/12354/fuel RequestID=14144c52-3090-4bc1-80ad-1393e26339d1
+time="2020-11-07T15:22:11-08:00" level=info Method=GET RemoteAddress="[::1]:53151" RequestID=84f14e35-5c25-4f13-ad92-ad4a49e92821 URL=/vehicles/234sda/fuel
+time="2020-11-07T15:22:11-08:00" level=error Caller="Called from main.(*Env).getVehicleFuelStatus; /Users/andyqi/Desktop/Projects/go/src/SmartCar/handlers.go#183" ClientError="Vehicle ID must be an integer" Error="strconv.ParseInt: parsing \"234sda\": invalid syntax" ErrorCode=400 InternalError="Failed to parse vehicle ID" Request=GET./vehicles/234sda/fuel RequestID=84f14e35-5c25-4f13-ad92-ad4a49e92821
+time="2020-11-07T18:05:00-08:00" level=info msg="Starting Server"
+time="2020-11-07T18:06:11-08:00" level=info Method=POST RemoteAddress="[::1]:53863" RequestID=626215c9-d3c3-4c57-b747-2ac8633c20f3 URL=/vehicles/234sda/engine
+time="2020-11-07T18:06:11-08:00" level=error Caller="Called from main.(*Env).getVehicle; /Users/andyqi/Desktop/Projects/go/src/SmartCar/handlers.go#62" ClientError="Vehicle ID must be an integer" Error="strconv.ParseInt: parsing \"234sda\": invalid syntax" ErrorCode=400 InternalError="Failed to parse vehicle ID" Request=POST./vehicles/234sda/engine RequestID=626215c9-d3c3-4c57-b747-2ac8633c20f3
+time="2020-11-07T18:06:18-08:00" level=info Method=POST RemoteAddress="[::1]:53865" RequestID=ee22708a-9bab-405d-a40f-c528121bd1c8 URL=/vehicles/1234/engine
+time="2020-11-07T18:06:18-08:00" level=info Request=POST./vehicles/1234/engine RequestID=ee22708a-9bab-405d-a40f-c528121bd1c8 Response="{123123412412 Metallic Silver 4 v8}" ResponseCode=200
+time="2020-11-07T18:06:30-08:00" level=info Method=POST RemoteAddress="[::1]:53871" RequestID=fc720ade-e32a-492e-a13f-86689489e762 URL=/vehicles/1234/engine
+time="2020-11-07T18:06:30-08:00" level=info Request=POST./vehicles/1234/engine RequestID=fc720ade-e32a-492e-a13f-86689489e762 Response="{123123412412 Metallic Silver 4 v8}" ResponseCode=200
+time="2020-11-07T18:07:15-08:00" level=info msg="Starting Server"
+time="2020-11-07T18:07:17-08:00" level=info Method=POST RemoteAddress="[::1]:53880" RequestID=d5d155f8-0c81-4305-9164-fe5fe406adb4 URL=/vehicles/1234/engine
+time="2020-11-07T18:07:17-08:00" level=error Caller="Called from app_api/apis/vehicle.(*service).SendEngineAction; /Users/andyqi/Desktop/Projects/go/src/SmartCar/apis/vehicle/vehicle.go#152" ClientError="Failed to read response from GM" Error="Unsupported data type: " ErrorCode=500 InternalError="Failed to read response from GM" Request=POST./vehicles/1234/engine RequestID=d5d155f8-0c81-4305-9164-fe5fe406adb4
+time="2020-11-07T18:10:13-08:00" level=info msg="Starting Server"
+time="2020-11-07T18:10:14-08:00" level=info Method=POST RemoteAddress="[::1]:53900" RequestID=57573039-f260-4ce2-94a2-3e80d52d5999 URL=/vehicles/1234/engine
+time="2020-11-07T18:10:15-08:00" level=error Caller="Called from app_api/apis/vehicle.(*service).SendEngineAction; /Users/andyqi/Desktop/Projects/go/src/SmartCar/apis/vehicle/vehicle.go#152" ClientError="Failed to read response from GM" Error="Unsupported data type: " ErrorCode=500 InternalError="Failed to read response from GM" Request=POST./vehicles/1234/engine RequestID=57573039-f260-4ce2-94a2-3e80d52d5999
+time="2020-11-07T18:10:42-08:00" level=info msg="Starting Server"
+time="2020-11-07T18:10:44-08:00" level=info Method=POST RemoteAddress="[::1]:53906" RequestID=cb9dfb64-092e-483e-a10f-217dfc02bfd8 URL=/vehicles/1234/engine
+time="2020-11-07T18:10:44-08:00" level=info Request=POST./vehicles/1234/engine RequestID=cb9dfb64-092e-483e-a10f-217dfc02bfd8 Response="{success}" ResponseCode=200

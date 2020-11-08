@@ -29,7 +29,7 @@ type Vehicle struct {
 	DriveTrain string `json:"driveTrain"`
 }
 
-// Door doors response
+// Door response
 //
 // swagger:model Door
 type Door struct {
@@ -42,6 +42,28 @@ type Door struct {
 	// Locked
 	//
 	// required: true
-	// example: Metallic Silver
+	// example: False
 	Locked bool `json:"locked"`
+}
+
+// Fuel response
+//
+// swagger:model Fuel
+type Fuel struct {
+	// Percentage
+	//
+	// required: true
+	// example: 44.3
+	Percentage *float64 `json:"percentage"`
+}
+
+// Battery response
+//
+// swagger:model Battery
+type Battery struct {
+	// Percentage
+	//
+	// required: true
+	// example: 44.3
+	Percentage *float64 `json:"percentage"`
 }
