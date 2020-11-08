@@ -19,11 +19,7 @@ const (
 )
 
 func TestNewResponseSuccess(t *testing.T) {
-	expectedResponse := response{
-		Message: "success",
-	}
-	jExpected, err := json.Marshal(expectedResponse)
-	assert.NoError(t, err)
+	jExpected := []byte("null")
 	w := httptest.NewRecorder()
 	ctx := context.Background()
 	NewResponse(ctx, w, nil, nil)
@@ -48,7 +44,7 @@ func TestNewResponseSuccessWithResult(t *testing.T) {
 	body, _ := ioutil.ReadAll(resp.Body)
 	assert.Equal(t, "application/json", resp.Header.Get(contentType))
 	assert.Equal(t, http.StatusOK, resp.StatusCode)
-	assert.Equal(t, `{"error":0,"message":"success","result":{"Username":"Test","Address":"Address","Code":123}}`, string(body))
+	assert.Equal(t, `{"Username":"Test","Address":"Address","Code":123}`, string(body))
 }
 
 func TestNewResponseError(t *testing.T) {
