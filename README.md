@@ -6,7 +6,8 @@ https://app.swaggerhub.com/apis/pink-cupcake/SmartCar/1.01
 ```
 LOG_FILE
 ENVIRONMENT
-PORT```
+PORT
+```
 
 The `ENVIRONMENT` and `PORT` variables are optional. The default PORT is 8003.
 
