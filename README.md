@@ -3,7 +3,8 @@ The SmartCar API acts as a forward proxy, standardizing the responses from the G
 https://app.swaggerhub.com/apis/pink-cupcake/SmartCar/1.01
 
 # Environment variables
-```LOG_FILE
+```
+LOG_FILE
 ENVIRONMENT
 PORT```
 
@@ -36,7 +37,7 @@ go test ./...
 ```
 Note: `go test ./...` should be run from the root directory for the project. These are unit tests for the API.
 
-There are additional end to end tests I used on sandbox.py - but they aren't intended for robust smoke tests. It is comprehensive in that all API requests are accessed, and has a few variations(invalid vehicleID, invalid resource, etc.), but no assertions.
+There are additional end to end tests I used on sandbox.py - but they aren't intended for robust smoke tests. It is comprehensive in that all API requests are accessed, and has a few variations(invalid vehicleID, invalid resource, etc.), but no assertions. This does include basic performance metrics, and the average response time is ~10ms
 
 Results for sandbox requests against the API are saved in sandbox_results.json
 
