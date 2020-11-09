@@ -22,6 +22,13 @@ Requires go 1.13
 cd SmartCar
 go run app_api
 ```
+
+or
+
+```bash
+cd SmartCar
+./app_api
+```
 Note: the executible binary is included and can be run directly. If it fails - check if the environment variables were set.
 
 # To generate Swagger documentation

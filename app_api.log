@@ -432,3 +432,20 @@ time="2020-11-08T16:27:15-08:00" level=info Method=POST RemoteAddress="[::1]:593
 time="2020-11-08T16:27:15-08:00" level=error Caller="Called from app_api/apis/vehicle.(*service).SendEngineAction; /Users/andyqi/Desktop/Projects/go/src/SmartCar/apis/vehicle/vehicle.go#147" ClientError="Unsupported engine action option" Error="Unsupported data type: FOOBAR" ErrorCode=500 InternalError="Unsupported engine action option" Request=POST./vehicles/1234/engine RequestID=d5bc1829-7fd7-4d0f-99b8-417733709134
 time="2020-11-08T16:27:15-08:00" level=info Method=GET RemoteAddress="[::1]:59320" RequestID=5aa0e808-1591-4d7f-ab29-b4c0961bafdf URL=/vehicles/1234/battery
 time="2020-11-08T16:27:15-08:00" level=info Request=GET./vehicles/1234/battery RequestID=5aa0e808-1591-4d7f-ab29-b4c0961bafdf Response="{<nil>}" ResponseCode=200
+time="2020-11-08T17:11:01-08:00" level=info msg="Starting Server"
+time="2020-11-08T17:11:04-08:00" level=info Method=GET RemoteAddress="[::1]:59714" RequestID=3bbab589-460b-45e7-999c-ca7dd78c6e25 URL=/vehicles/1234
+time="2020-11-08T17:11:05-08:00" level=info Request=GET./vehicles/1234 RequestID=3bbab589-460b-45e7-999c-ca7dd78c6e25 Response="{123123412412 Metallic Silver 4 v8}" ResponseCode=200
+time="2020-11-08T17:11:05-08:00" level=info Method=POST RemoteAddress="[::1]:59716" RequestID=5732c1ad-63b9-43c3-82c5-2a9e9666a5a2 URL=/vehicles/1234/engine
+time="2020-11-08T17:11:05-08:00" level=info Request=POST./vehicles/1234/engine RequestID=5732c1ad-63b9-43c3-82c5-2a9e9666a5a2 Response="{success}" ResponseCode=200
+time="2020-11-08T17:11:05-08:00" level=info Method=GET RemoteAddress="[::1]:59717" RequestID=8f8f4e40-0dd4-4a44-9388-30f6b840551f URL=/vehicles/1234/doors
+time="2020-11-08T17:11:05-08:00" level=info Request=GET./vehicles/1234/doors RequestID=8f8f4e40-0dd4-4a44-9388-30f6b840551f Response="[{frontLeft false} {backLeft true} {frontRight true} {backRight false}]" ResponseCode=200
+time="2020-11-08T17:11:05-08:00" level=info Method=GET RemoteAddress="[::1]:59718" RequestID=b2042a2f-0d75-4ed0-ae65-2c91af7571bb URL=/vehicles/1234/fuel
+time="2020-11-08T17:11:05-08:00" level=info Request=GET./vehicles/1234/fuel RequestID=b2042a2f-0d75-4ed0-ae65-2c91af7571bb Response="{0xc000210450}" ResponseCode=200
+time="2020-11-08T17:11:05-08:00" level=info Method=GET RemoteAddress="[::1]:59719" RequestID=608d2d7e-f392-4f6e-b5f4-efea45e726b8 URL=/vehicles/1235/battery
+time="2020-11-08T17:11:05-08:00" level=info Request=GET./vehicles/1235/battery RequestID=608d2d7e-f392-4f6e-b5f4-efea45e726b8 Response="{0xc000019448}" ResponseCode=200
+time="2020-11-08T17:11:05-08:00" level=info Method=GET RemoteAddress="[::1]:59720" RequestID=1245e632-7e80-47d8-8582-996d3db0100f URL=/vehicles/1236/battery
+time="2020-11-08T17:11:05-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicleEnergyStatus; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#307" ClientError="Failed to get vehicle energy status" Error="Failed to GET vehicle energy status from GM, non-200 response: Vehicle id: 1236 not found. Response code: 404" ErrorCode=500 InternalError="Failed to get vehicle energy status" Request=GET./vehicles/1236/battery RequestID=1245e632-7e80-47d8-8582-996d3db0100f
+time="2020-11-08T17:11:05-08:00" level=info Method=POST RemoteAddress="[::1]:59721" RequestID=7125580b-8790-4c7f-9b1f-222571b58963 URL=/vehicles/1234/engine
+time="2020-11-08T17:11:05-08:00" level=error Caller="Called from app_api/apis/vehicle.(*service).SendEngineAction; /Users/andyqi/Desktop/Projects/go/src/SmartCar/apis/vehicle/vehicle.go#147" ClientError="Unsupported engine action option" Error="Unsupported data type: FOOBAR" ErrorCode=500 InternalError="Unsupported engine action option" Request=POST./vehicles/1234/engine RequestID=7125580b-8790-4c7f-9b1f-222571b58963
+time="2020-11-08T17:11:05-08:00" level=info Method=GET RemoteAddress="[::1]:59722" RequestID=727d2723-e12a-47f8-a024-22abfc939275 URL=/vehicles/1234/battery
+time="2020-11-08T17:11:05-08:00" level=info Request=GET./vehicles/1234/battery RequestID=727d2723-e12a-47f8-a024-22abfc939275 Response="{<nil>}" ResponseCode=200
