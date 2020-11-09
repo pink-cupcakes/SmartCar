@@ -55,6 +55,7 @@ func (e *APIError) Caller() string {
 	return fmt.Sprintf("Called from %s; %s#%d", e.funcName, e.file, e.line)
 }
 
+// caller ... attaches runtime logs including the exact filepath and function name for the error message
 func (e *APIError) caller() {
 	var pc uintptr
 	pc, e.file, e.line, e.withCallerInf = runtime.Caller(2)

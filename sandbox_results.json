@@ -1,0 +1,56 @@
+{
+    "vehicles/1234": [
+        {
+            "content": "{\"vin\":\"123123412412\",\"color\":\"Metallic Silver\",\"doorCount\":4,\"driveTrain\":\"v8\"}", 
+            "request_time": 0.017539024353027344, 
+            "status_code": 200
+        }
+    ], 
+    "vehicles/1234/battery": [
+        {
+            "content": "{\"percentage\":null}", 
+            "request_time": 0.010097026824951172, 
+            "status_code": 200
+        }
+    ], 
+    "vehicles/1234/doors": [
+        {
+            "content": "[{\"location\":\"backRight\",\"locked\":false},{\"location\":\"frontRight\",\"locked\":false},{\"location\":\"backLeft\",\"locked\":false},{\"location\":\"frontLeft\",\"locked\":true}]", 
+            "request_time": 0.014725923538208008, 
+            "status_code": 200
+        }
+    ], 
+    "vehicles/1234/engine": [
+        {
+            "content": "{\"status\":\"error\"}", 
+            "request_time": 0.014594078063964844, 
+            "status_code": 200
+        }, 
+        {
+            "content": "{\"error\":1,\"message\":\"Unsupported engine action option\"}", 
+            "request_time": 0.002885103225708008, 
+            "status_code": 500
+        }
+    ], 
+    "vehicles/1234/fuel": [
+        {
+            "content": "{\"percentage\":86.87}", 
+            "request_time": 0.013051986694335938, 
+            "status_code": 200
+        }
+    ], 
+    "vehicles/1235/battery": [
+        {
+            "content": "{\"percentage\":62.55}", 
+            "request_time": 0.011761903762817383, 
+            "status_code": 200
+        }
+    ], 
+    "vehicles/1236/battery": [
+        {
+            "content": "{\"error\":1,\"message\":\"Failed to get vehicle energy status\"}", 
+            "request_time": 0.011441946029663086, 
+            "status_code": 500
+        }
+    ]
+}

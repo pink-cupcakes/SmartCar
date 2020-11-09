@@ -15,6 +15,7 @@ import (
 
 // GMAPIConnector ... is an interface of appapi methods called
 type GMAPIConnector interface {
+	// TODO: We might want to cache responses for GetVehicle
 	GetVehicle(vehicleID int64) (res gmVehicleData, err *shared.APIError)
 	GetVehicleDoors(vehicleID int64) (res []GMVehicleDoorData, err *shared.APIError)
 	GetVehicleEnergyStatus(vehicleID int64) (fuelLevel, batteryLevel *float64, err *shared.APIError)
@@ -91,6 +92,7 @@ func (gm *gmAPIConnector) GetVehicle(vehicleID int64) (res gmVehicleData, err *s
 		return
 	}
 
+	// Parse the response
 	var gmVehicleResponse GMVehicleResponse
 
 	requestErr = json.Unmarshal(b, &gmVehicleResponse)
@@ -110,12 +112,13 @@ func (gm *gmAPIConnector) GetVehicle(vehicleID int64) (res gmVehicleData, err *s
 		return
 	}
 	if gmStatusCode != 200 {
-		requestErr = errors.New(fmt.Sprintf("Failed to GET vehicle from GM, non-200 response: %s Response code: %d", gmVehicleResponse.ErrorMessage, gmStatusCode))
+		requestErr = fmt.Errorf("Failed to GET vehicle from GM, non-200 response: %s Response code: %d", gmVehicleResponse.ErrorMessage, gmStatusCode)
 		clientErr := "Failed to get vehicle"
 		err = shared.NewAPIError(http.StatusInternalServerError, requestErr, clientErr)
 		return
 	}
 
+	// MapToStruct ... performs type checking and returns a flattened version of the GM response
 	mapToStructErr := res.MapToStruct(gmVehicleResponse.Data)
 	if mapToStructErr != nil {
 		clientErr := "Failed to get vehicle"
@@ -126,16 +129,19 @@ func (gm *gmAPIConnector) GetVehicle(vehicleID int64) (res gmVehicleData, err *s
 	return
 }
 
+// GMVehicleDoorsResponse ... GM raw response structure
 type GMVehicleDoorsResponse struct {
 	StatusString string `json:"status"`
 	ErrorMessage string `json:"reason"`
 	Data         Doors  `json:"data"`
 }
 
+// Doors ... GM raw Doors response structure
 type Doors struct {
 	Doors DoorsArrayDataValue `json:"doors"`
 }
 
+// DoorsArrayDataValue ... GM raw doors array response structure
 type DoorsArrayDataValue struct {
 	Type   string                 `json:"type"`
 	Values []map[string]DataValue `json:"values"`
@@ -153,6 +159,7 @@ func (gm *gmAPIConnector) GetVehicleDoors(vehicleID int64) (res []GMVehicleDoorD
 		return
 	}
 
+	// Make initial request to GM
 	resp, requestErr := gm.makeRequest(getVehicleDoors, "POST", requestBody, nil)
 	if requestErr != nil {
 		clientErr := "Internal Error"
@@ -162,6 +169,7 @@ func (gm *gmAPIConnector) GetVehicleDoors(vehicleID int64) (res []GMVehicleDoorD
 
 	defer resp.Body.Close()
 
+	// Parse GM response
 	b, requestErr := ioutil.ReadAll(resp.Body)
 	if requestErr != nil {
 		clientErr := "Failed to get vehicle doors"
@@ -169,8 +177,9 @@ func (gm *gmAPIConnector) GetVehicleDoors(vehicleID int64) (res []GMVehicleDoorD
 		return
 	}
 
+	// Check for request level errors
 	if resp.StatusCode != 200 {
-		requestErr = errors.New("Failed to GET vehicle from GM, non-200 response: " + string(b))
+		requestErr = errors.New("Failed to GET vehicle doors from GM, non-200 response: " + string(b))
 		clientErr := "Failed to get vehicle doors"
 		err = shared.NewAPIError(http.StatusInternalServerError, requestErr, clientErr)
 		return
@@ -178,6 +187,7 @@ func (gm *gmAPIConnector) GetVehicleDoors(vehicleID int64) (res []GMVehicleDoorD
 
 	var gmVehicleDoorsResponse GMVehicleDoorsResponse
 
+	// Parse the response
 	requestErr = json.Unmarshal(b, &gmVehicleDoorsResponse)
 	if requestErr != nil {
 		clientErr := "Failed to get vehicle doors"
@@ -186,6 +196,7 @@ func (gm *gmAPIConnector) GetVehicleDoors(vehicleID int64) (res []GMVehicleDoorD
 		return
 	}
 
+	// GM nests its errors in the response - check for errors in the response body
 	gmStatusCode, parseCodeError := strconv.ParseInt(gmVehicleDoorsResponse.StatusString, 10, 64)
 	if parseCodeError != nil {
 		err = shared.NewAPIError(http.StatusInternalServerError, parseCodeError, "Failed to parse status code")
@@ -199,8 +210,11 @@ func (gm *gmAPIConnector) GetVehicleDoors(vehicleID int64) (res []GMVehicleDoorD
 		return
 	}
 
+	// Process only the relevant data
 	data := gmVehicleDoorsResponse.Data.Doors
 
+	// Response data type checking ... Doors has an additional nesting of data types.
+	// For flat structure responses, type checking is handled in MapToStruct.
 	if data.Type != "Array" {
 		requestErr = fmt.Errorf("Incorrect data type from GM API for vehicle doors. Response is \n%s", string(b))
 		clientErr := "Failed to get vehicle doors"
@@ -211,6 +225,7 @@ func (gm *gmAPIConnector) GetVehicleDoors(vehicleID int64) (res []GMVehicleDoorD
 	for _, gmDoorResponse := range data.Values {
 		var flattenedGMDoorResponse GMVehicleDoorData
 
+		// Turn the GM door types into a flattened structure ... includes Door level type checking
 		mapToStructErr := flattenedGMDoorResponse.MapToStruct(gmDoorResponse)
 		if mapToStructErr != nil {
 			clientErr := "Failed to get vehicle doors"
@@ -224,6 +239,7 @@ func (gm *gmAPIConnector) GetVehicleDoors(vehicleID int64) (res []GMVehicleDoorD
 	return
 }
 
+// GMVehicleEnergyResponse ... raw GM response for energy status
 type GMVehicleEnergyResponse struct {
 	StatusString string               `json:"status"`
 	ErrorMessage string               `json:"reason"`
@@ -242,6 +258,7 @@ func (gm *gmAPIConnector) GetVehicleEnergyStatus(vehicleID int64) (fuelLevel, ba
 		return
 	}
 
+	// Make the request to GM
 	resp, requestErr := gm.makeRequest(getVehicleEnergyLevel, "POST", requestBody, nil)
 	if requestErr != nil {
 		clientErr := "Internal Error"
@@ -249,6 +266,7 @@ func (gm *gmAPIConnector) GetVehicleEnergyStatus(vehicleID int64) (fuelLevel, ba
 		return
 	}
 
+	// Parse the response
 	defer resp.Body.Close()
 
 	b, requestErr := ioutil.ReadAll(resp.Body)
@@ -258,6 +276,7 @@ func (gm *gmAPIConnector) GetVehicleEnergyStatus(vehicleID int64) (fuelLevel, ba
 		return
 	}
 
+	// Initial request level error checking
 	if resp.StatusCode != 200 {
 		requestErr = errors.New("Failed to GET vehicle from GM, non-200 response: " + string(b))
 		clientErr := "Failed to get vehicle energy status"
@@ -265,6 +284,7 @@ func (gm *gmAPIConnector) GetVehicleEnergyStatus(vehicleID int64) (fuelLevel, ba
 		return
 	}
 
+	// Parse response data
 	var gmVehicleEnergyResponse GMVehicleEnergyResponse
 
 	requestErr = json.Unmarshal(b, &gmVehicleEnergyResponse)
@@ -288,6 +308,7 @@ func (gm *gmAPIConnector) GetVehicleEnergyStatus(vehicleID int64) (fuelLevel, ba
 		return
 	}
 
+	// Type checking and flatten GM response
 	var flattenedGMDoorResponse GMVehicleEnergyData
 
 	mapToStructErr := flattenedGMDoorResponse.MapToStruct(gmVehicleEnergyResponse.Data)
@@ -312,6 +333,9 @@ type ActionResult struct {
 
 // SendVehicleEngineAction ... returns the status of the remaining energy for a given car from GM API
 func (gm *gmAPIConnector) SendVehicleEngineAction(vehicleID int64, action string) (res ActionResult, err *shared.APIError) {
+	/** The command was already checking on the API level (vehicle.go).
+	TODO: In hindsight, I think the engine action validation should be refactored to the GM package level to allow the API method to be extendable to other manufacturers.
+	*/
 	requestBody, requestBodyErr := json.Marshal(map[string]interface{}{
 		"id":           fmt.Sprintf("%d", vehicleID),
 		"command":      action,
@@ -323,6 +347,7 @@ func (gm *gmAPIConnector) SendVehicleEngineAction(vehicleID int64, action string
 		return
 	}
 
+	// Make request to GM
 	resp, requestErr := gm.makeRequest(postVehicleEngineAction, "POST", requestBody, nil)
 	if requestErr != nil {
 		clientErr := "Internal Error"
@@ -332,6 +357,7 @@ func (gm *gmAPIConnector) SendVehicleEngineAction(vehicleID int64, action string
 
 	defer resp.Body.Close()
 
+	// Parse response body
 	b, requestErr := ioutil.ReadAll(resp.Body)
 	if requestErr != nil {
 		clientErr := "Failed to send engine action"
@@ -339,6 +365,7 @@ func (gm *gmAPIConnector) SendVehicleEngineAction(vehicleID int64, action string
 		return
 	}
 
+	// Error check on request level
 	if resp.StatusCode != 200 {
 		requestErr = errors.New("Failed to POST vehicle engine action to GM, non-200 response: " + string(b))
 		clientErr := "Failed to send engine action"
@@ -348,6 +375,7 @@ func (gm *gmAPIConnector) SendVehicleEngineAction(vehicleID int64, action string
 
 	var gmVehicleEngineResponse GMEngineActionResponse
 
+	// Parse response data
 	requestErr = json.Unmarshal(b, &gmVehicleEngineResponse)
 	if requestErr != nil {
 		clientErr := "Failed to send engine action"
@@ -356,6 +384,7 @@ func (gm *gmAPIConnector) SendVehicleEngineAction(vehicleID int64, action string
 		return
 	}
 
+	// Check for errors in the GM response
 	gmStatusCode, parseCodeError := strconv.ParseInt(gmVehicleEngineResponse.StatusString, 10, 64)
 	if parseCodeError != nil {
 		err = shared.NewAPIError(http.StatusInternalServerError, parseCodeError, "Failed to parse status code")
@@ -372,6 +401,7 @@ func (gm *gmAPIConnector) SendVehicleEngineAction(vehicleID int64, action string
 	return gmVehicleEngineResponse.Result, nil
 }
 
+// makeRequest ... wrapper for making HTTP requests
 func (gm *gmAPIConnector) makeRequest(endpoint, method string, body []byte, params url.Values) (resp *http.Response, err error) {
 	client := &http.Client{}
 	URL, err := url.Parse(fmt.Sprintf("%s/%s", gmAPIURL, endpoint))

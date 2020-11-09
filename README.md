@@ -32,8 +32,13 @@ go generate
 
 # To test the API
 ```bash
-go test
+go test ./...
 ```
+Note: `go test ./...` should be run from the root directory for the project. These are unit tests for the API.
+
+There are additional end to end tests I used on sandbox.py - but they aren't intended for robust smoke tests. It is comprehensive in that all API requests are accessed, and has a few variations(invalid vehicleID, invalid resource, etc.), but no assertions.
+
+Results for sandbox requests against the API are saved in sandbox_results.json
 
 # Logging
 Currently logs are output to the project filepath, at the file app_api.log. This can be changed in the environment variables. 

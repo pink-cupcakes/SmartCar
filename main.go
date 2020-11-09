@@ -37,6 +37,9 @@ func Initialize() {
 	// init all services
 	gmAPIConnector := gmConnector.NewGMAPIConnector()
 
+	// VehicleService ... represents a wrapper around all actions available around a vehicle
+
+	// TODO: As the API functionality increases, this should be broken out into more services. Such as by Vehicle parts: i.e. Overview, Wheels, Doors, Engine, Energy
 	vehicleService := vehicle.NewService(gmAPIConnector)
 
 	r = mux.NewRouter()
@@ -57,6 +60,11 @@ func (env *Env) initializeRoutes() {
 	r.HandleFunc("/vehicles/{vehicle_id}/battery", env.getVehicleBatteryStatus).Methods("GET")
 	r.HandleFunc("/vehicles/{vehicle_id}/engine", env.actionEngine).Methods("POST")
 
+	// Logger - attaches logging functionalities as middleware to all endpoints
+	/** Todo: This is also where additional checks that need to be applied against all endpoints would happen. For example:
+	- Authorization checks
+	- Resource availability, such as variations between what's available for the given vehicle's make/model
+	*/
 	r.Use(Logger)
 }
 

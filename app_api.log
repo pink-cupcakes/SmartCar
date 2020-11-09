@@ -222,3 +222,213 @@ time="2020-11-07T18:10:15-08:00" level=error Caller="Called from app_api/apis/ve
 time="2020-11-07T18:10:42-08:00" level=info msg="Starting Server"
 time="2020-11-07T18:10:44-08:00" level=info Method=POST RemoteAddress="[::1]:53906" RequestID=cb9dfb64-092e-483e-a10f-217dfc02bfd8 URL=/vehicles/1234/engine
 time="2020-11-07T18:10:44-08:00" level=info Request=POST./vehicles/1234/engine RequestID=cb9dfb64-092e-483e-a10f-217dfc02bfd8 Response="{success}" ResponseCode=200
+time="2020-11-08T15:53:08-08:00" level=info msg="Starting Server"
+time="2020-11-08T16:13:45-08:00" level=info Method=GET RemoteAddress="[::1]:59071" RequestID=8f450ecf-9e87-4e85-b41e-d4c0cd755936 URL=/vehicles/1234
+time="2020-11-08T16:13:45-08:00" level=info Request=GET./vehicles/1234 RequestID=8f450ecf-9e87-4e85-b41e-d4c0cd755936 Response="{123123412412 Metallic Silver 4 v8}" ResponseCode=200
+time="2020-11-08T16:13:46-08:00" level=info Method=POST RemoteAddress="[::1]:59073" RequestID=250fc097-19b1-450d-ad59-abd1c220377f URL=/vehicles/1234/engine
+time="2020-11-08T16:13:46-08:00" level=info Request=POST./vehicles/1234/engine RequestID=250fc097-19b1-450d-ad59-abd1c220377f Response="{error}" ResponseCode=200
+time="2020-11-08T16:13:46-08:00" level=info Method=GET RemoteAddress="[::1]:59074" RequestID=ca7c7ebc-00b8-4388-afcd-f1c3c5ae081d URL=/vehicles/1234/doors
+time="2020-11-08T16:13:46-08:00" level=info Request=GET./vehicles/1234/doors RequestID=ca7c7ebc-00b8-4388-afcd-f1c3c5ae081d Response="[{frontRight false} {backRight true} {frontLeft true} {backLeft false}]" ResponseCode=200
+time="2020-11-08T16:13:46-08:00" level=info Method=GET RemoteAddress="[::1]:59075" RequestID=75922afd-62a8-4fa1-bd4a-c1c7811b2a56 URL=/vehicles/1234/fuel
+time="2020-11-08T16:13:46-08:00" level=info Request=GET./vehicles/1234/fuel RequestID=75922afd-62a8-4fa1-bd4a-c1c7811b2a56 Response="{0xc000098600}" ResponseCode=200
+time="2020-11-08T16:13:46-08:00" level=info Method=GET RemoteAddress="[::1]:59076" RequestID=94dd3787-be20-486d-a58a-6f26864e0851 URL=/vehicles/1234/battery
+time="2020-11-08T16:13:46-08:00" level=info Request=GET./vehicles/1234/battery RequestID=94dd3787-be20-486d-a58a-6f26864e0851 Response="{<nil>}" ResponseCode=200
+time="2020-11-08T16:14:25-08:00" level=info Method=GET RemoteAddress="[::1]:59088" RequestID=3c35d2a5-4392-479d-889b-0fd78032d5a3 URL=/vehicles/1234
+time="2020-11-08T16:14:25-08:00" level=info Request=GET./vehicles/1234 RequestID=3c35d2a5-4392-479d-889b-0fd78032d5a3 Response="{123123412412 Metallic Silver 4 v8}" ResponseCode=200
+time="2020-11-08T16:14:25-08:00" level=info Method=POST RemoteAddress="[::1]:59089" RequestID=c9955986-e7e9-4cc2-a131-22276068fd50 URL=/vehicles/1234/engine
+time="2020-11-08T16:14:25-08:00" level=info Request=POST./vehicles/1234/engine RequestID=c9955986-e7e9-4cc2-a131-22276068fd50 Response="{success}" ResponseCode=200
+time="2020-11-08T16:14:26-08:00" level=info Method=GET RemoteAddress="[::1]:59090" RequestID=6115ff7d-92fb-4f25-968b-461815ac1fa6 URL=/vehicles/1234/doors
+time="2020-11-08T16:14:26-08:00" level=info Request=GET./vehicles/1234/doors RequestID=6115ff7d-92fb-4f25-968b-461815ac1fa6 Response="[{backLeft false} {backRight true} {frontLeft false} {frontRight true}]" ResponseCode=200
+time="2020-11-08T16:14:26-08:00" level=info Method=GET RemoteAddress="[::1]:59091" RequestID=bd983822-45cf-4035-83ec-24a1d325c93e URL=/vehicles/1234/fuel
+time="2020-11-08T16:14:26-08:00" level=info Request=GET./vehicles/1234/fuel RequestID=bd983822-45cf-4035-83ec-24a1d325c93e Response="{0xc000222410}" ResponseCode=200
+time="2020-11-08T16:14:26-08:00" level=info Method=GET RemoteAddress="[::1]:59092" RequestID=72fb9298-32f0-49bb-b6df-750662760e2c URL=/vehicles/1234/battery
+time="2020-11-08T16:14:26-08:00" level=info Request=GET./vehicles/1234/battery RequestID=72fb9298-32f0-49bb-b6df-750662760e2c Response="{<nil>}" ResponseCode=200
+time="2020-11-08T16:14:35-08:00" level=info Method=GET RemoteAddress="[::1]:59096" RequestID=c9cb4e4b-8d9b-4728-ab22-c8c707226169 URL=/vehicles/1234
+time="2020-11-08T16:14:35-08:00" level=info Request=GET./vehicles/1234 RequestID=c9cb4e4b-8d9b-4728-ab22-c8c707226169 Response="{123123412412 Metallic Silver 4 v8}" ResponseCode=200
+time="2020-11-08T16:14:35-08:00" level=info Method=POST RemoteAddress="[::1]:59097" RequestID=7c2ffe16-45cd-4c97-941d-313105d6301e URL=/vehicles/1234/engine
+time="2020-11-08T16:14:35-08:00" level=info Request=POST./vehicles/1234/engine RequestID=7c2ffe16-45cd-4c97-941d-313105d6301e Response="{success}" ResponseCode=200
+time="2020-11-08T16:14:35-08:00" level=info Method=GET RemoteAddress="[::1]:59098" RequestID=79b09afc-de7e-4f7d-a129-2b6a0698c58a URL=/vehicles/1234/doors
+time="2020-11-08T16:14:35-08:00" level=info Request=GET./vehicles/1234/doors RequestID=79b09afc-de7e-4f7d-a129-2b6a0698c58a Response="[{frontRight false} {frontLeft true} {backRight false} {backLeft false}]" ResponseCode=200
+time="2020-11-08T16:14:35-08:00" level=info Method=GET RemoteAddress="[::1]:59099" RequestID=f0c45313-9793-418c-ac87-927ddcc00cd6 URL=/vehicles/1234/fuel
+time="2020-11-08T16:14:35-08:00" level=info Request=GET./vehicles/1234/fuel RequestID=f0c45313-9793-418c-ac87-927ddcc00cd6 Response="{0xc000098bd0}" ResponseCode=200
+time="2020-11-08T16:14:35-08:00" level=info Method=GET RemoteAddress="[::1]:59100" RequestID=cb560f5a-2e3f-446b-98a6-f7b95f1f668f URL=/vehicles/1234/battery
+time="2020-11-08T16:14:35-08:00" level=info Request=GET./vehicles/1234/battery RequestID=cb560f5a-2e3f-446b-98a6-f7b95f1f668f Response="{<nil>}" ResponseCode=200
+time="2020-11-08T16:14:49-08:00" level=info Method=GET RemoteAddress="[::1]:59102" RequestID=b1d76da6-76dc-4963-910d-b778a72353d5 URL=/vehicles/1234
+time="2020-11-08T16:14:49-08:00" level=info Request=GET./vehicles/1234 RequestID=b1d76da6-76dc-4963-910d-b778a72353d5 Response="{123123412412 Metallic Silver 4 v8}" ResponseCode=200
+time="2020-11-08T16:14:49-08:00" level=info Method=POST RemoteAddress="[::1]:59103" RequestID=ab7b8168-c037-430c-bcad-582c22353b01 URL=/vehicles/1234/engine
+time="2020-11-08T16:14:49-08:00" level=info Request=POST./vehicles/1234/engine RequestID=ab7b8168-c037-430c-bcad-582c22353b01 Response="{error}" ResponseCode=200
+time="2020-11-08T16:14:49-08:00" level=info Method=GET RemoteAddress="[::1]:59104" RequestID=fa495610-e8cb-4b2d-af6e-74412f475843 URL=/vehicles/1234/doors
+time="2020-11-08T16:14:49-08:00" level=info Request=GET./vehicles/1234/doors RequestID=fa495610-e8cb-4b2d-af6e-74412f475843 Response="[{backLeft true} {frontLeft true} {backRight false} {frontRight true}]" ResponseCode=200
+time="2020-11-08T16:14:49-08:00" level=info Method=GET RemoteAddress="[::1]:59105" RequestID=c1f5e45c-306b-4b96-8bc3-0d6f289d5a95 URL=/vehicles/1234/fuel
+time="2020-11-08T16:14:49-08:00" level=info Request=GET./vehicles/1234/fuel RequestID=c1f5e45c-306b-4b96-8bc3-0d6f289d5a95 Response="{0xc000098ea0}" ResponseCode=200
+time="2020-11-08T16:14:49-08:00" level=info Method=GET RemoteAddress="[::1]:59106" RequestID=44dc461f-b0e6-4550-a546-8046fab47e79 URL=/vehicles/1234/battery
+time="2020-11-08T16:14:49-08:00" level=info Request=GET./vehicles/1234/battery RequestID=44dc461f-b0e6-4550-a546-8046fab47e79 Response="{<nil>}" ResponseCode=200
+time="2020-11-08T16:15:37-08:00" level=info Method=GET RemoteAddress="[::1]:59113" RequestID=8b80d2ac-8d19-4c13-ad6a-89643eb060df URL=/vehicles/1234
+time="2020-11-08T16:15:37-08:00" level=info Request=GET./vehicles/1234 RequestID=8b80d2ac-8d19-4c13-ad6a-89643eb060df Response="{123123412412 Metallic Silver 4 v8}" ResponseCode=200
+time="2020-11-08T16:15:37-08:00" level=info Method=POST RemoteAddress="[::1]:59114" RequestID=e9f1310a-add9-4a06-a59f-a9a334ac2fd1 URL=/vehicles/1234/engine
+time="2020-11-08T16:15:37-08:00" level=info Request=POST./vehicles/1234/engine RequestID=e9f1310a-add9-4a06-a59f-a9a334ac2fd1 Response="{error}" ResponseCode=200
+time="2020-11-08T16:15:37-08:00" level=info Method=GET RemoteAddress="[::1]:59115" RequestID=9763fd65-cf9b-456b-94a3-36f7819b1ea1 URL=/vehicles/1234/doors
+time="2020-11-08T16:15:37-08:00" level=info Request=GET./vehicles/1234/doors RequestID=9763fd65-cf9b-456b-94a3-36f7819b1ea1 Response="[{backLeft true} {backRight true} {frontLeft false} {frontRight false}]" ResponseCode=200
+time="2020-11-08T16:15:37-08:00" level=info Method=GET RemoteAddress="[::1]:59116" RequestID=51affc7b-75bd-4215-b1b8-3b45335d74a9 URL=/vehicles/1234/fuel
+time="2020-11-08T16:15:37-08:00" level=info Request=GET./vehicles/1234/fuel RequestID=51affc7b-75bd-4215-b1b8-3b45335d74a9 Response="{0xc000222c00}" ResponseCode=200
+time="2020-11-08T16:15:37-08:00" level=info Method=GET RemoteAddress="[::1]:59117" RequestID=10f7bb43-8ff3-42cf-8c90-2447daf5de9c URL=/vehicles/1234/battery
+time="2020-11-08T16:15:37-08:00" level=info Request=GET./vehicles/1234/battery RequestID=10f7bb43-8ff3-42cf-8c90-2447daf5de9c Response="{<nil>}" ResponseCode=200
+time="2020-11-08T16:18:09-08:00" level=info Method=GET RemoteAddress="[::1]:59144" RequestID=5655b310-115a-42f4-878c-87fd315d98b9 URL=/vehicles/1234
+time="2020-11-08T16:18:10-08:00" level=info Request=GET./vehicles/1234 RequestID=5655b310-115a-42f4-878c-87fd315d98b9 Response="{123123412412 Metallic Silver 4 v8}" ResponseCode=200
+time="2020-11-08T16:18:10-08:00" level=info Method=POST RemoteAddress="[::1]:59146" RequestID=30cf43b0-6a18-45f5-aef4-d045c77c806c URL=/vehicles/1234/engine
+time="2020-11-08T16:18:10-08:00" level=info Request=POST./vehicles/1234/engine RequestID=30cf43b0-6a18-45f5-aef4-d045c77c806c Response="{error}" ResponseCode=200
+time="2020-11-08T16:18:10-08:00" level=info Method=GET RemoteAddress="[::1]:59147" RequestID=e3446482-9540-4449-89ce-a85e8ef2e00e URL=/vehicles/1234/doors
+time="2020-11-08T16:18:10-08:00" level=info Request=GET./vehicles/1234/doors RequestID=e3446482-9540-4449-89ce-a85e8ef2e00e Response="[{frontLeft false} {backRight true} {frontRight false} {backLeft false}]" ResponseCode=200
+time="2020-11-08T16:18:10-08:00" level=info Method=GET RemoteAddress="[::1]:59148" RequestID=e32a0b6a-e4ed-474e-bda9-f9df1fe8e9f7 URL=/vehicles/1234/fuel
+time="2020-11-08T16:18:10-08:00" level=info Request=GET./vehicles/1234/fuel RequestID=e32a0b6a-e4ed-474e-bda9-f9df1fe8e9f7 Response="{0xc000099330}" ResponseCode=200
+time="2020-11-08T16:18:10-08:00" level=info Method=GET RemoteAddress="[::1]:59149" RequestID=544e4296-6121-4b80-9c89-b47d64ddc344 URL=/vehicles/1235/battery
+time="2020-11-08T16:18:10-08:00" level=info Request=GET./vehicles/1235/battery RequestID=544e4296-6121-4b80-9c89-b47d64ddc344 Response="{0xc0003427f8}" ResponseCode=200
+time="2020-11-08T16:18:10-08:00" level=info Method=GET RemoteAddress="[::1]:59150" RequestID=6b053a8b-59fa-4e93-a549-27fc0e4a01f3 URL=/vehicles/1236/battery
+time="2020-11-08T16:18:10-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicleEnergyStatus; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#287" ClientError="Failed to get vehicle energy status" Error="Failed to GET vehicle energy status from GM, non-200 response: Vehicle id: 1236 not found. Response code: 404" ErrorCode=500 InternalError="Failed to get vehicle energy status" Request=GET./vehicles/1236/battery RequestID=6b053a8b-59fa-4e93-a549-27fc0e4a01f3
+time="2020-11-08T16:18:10-08:00" level=info Method=POST RemoteAddress="[::1]:59151" RequestID=16a65086-6162-4892-9a21-aee9883df4be URL=/vehicles/1234/engine
+time="2020-11-08T16:18:10-08:00" level=error Caller="Called from app_api/apis/vehicle.(*service).SendEngineAction; /Users/andyqi/Desktop/Projects/go/src/SmartCar/apis/vehicle/vehicle.go#147" ClientError="Unsupported engine action option" Error="Unsupported data type: FOOBAR" ErrorCode=500 InternalError="Unsupported engine action option" Request=POST./vehicles/1234/engine RequestID=16a65086-6162-4892-9a21-aee9883df4be
+time="2020-11-08T16:18:10-08:00" level=info Method=GET RemoteAddress="[::1]:59152" RequestID=4256e5e0-8870-4192-aed1-49f524662b2d URL=/vehicles/1234/battery
+time="2020-11-08T16:18:10-08:00" level=info Request=GET./vehicles/1234/battery RequestID=4256e5e0-8870-4192-aed1-49f524662b2d Response="{<nil>}" ResponseCode=200
+time="2020-11-08T16:18:27-08:00" level=info Method=GET RemoteAddress="[::1]:59156" RequestID=55b786cb-5224-40fe-98d8-6d54ade4e838 URL=/vehicles/1234
+time="2020-11-08T16:18:27-08:00" level=info Request=GET./vehicles/1234 RequestID=55b786cb-5224-40fe-98d8-6d54ade4e838 Response="{123123412412 Metallic Silver 4 v8}" ResponseCode=200
+time="2020-11-08T16:18:27-08:00" level=info Method=POST RemoteAddress="[::1]:59157" RequestID=496ba3cc-dd4f-48d2-8009-12e9572ddef6 URL=/vehicles/1234/engine
+time="2020-11-08T16:18:27-08:00" level=info Request=POST./vehicles/1234/engine RequestID=496ba3cc-dd4f-48d2-8009-12e9572ddef6 Response="{success}" ResponseCode=200
+time="2020-11-08T16:18:27-08:00" level=info Method=GET RemoteAddress="[::1]:59158" RequestID=2eadf9d3-bae0-4137-8811-c5c0b66179c4 URL=/vehicles/1234/doors
+time="2020-11-08T16:18:27-08:00" level=info Request=GET./vehicles/1234/doors RequestID=2eadf9d3-bae0-4137-8811-c5c0b66179c4 Response="[{frontLeft false} {frontRight false} {backLeft false} {backRight true}]" ResponseCode=200
+time="2020-11-08T16:18:27-08:00" level=info Method=GET RemoteAddress="[::1]:59159" RequestID=8cc12d3b-ea14-47b8-8eb1-bd8bd311b250 URL=/vehicles/1234/fuel
+time="2020-11-08T16:18:27-08:00" level=info Request=GET./vehicles/1234/fuel RequestID=8cc12d3b-ea14-47b8-8eb1-bd8bd311b250 Response="{0xc000099650}" ResponseCode=200
+time="2020-11-08T16:18:27-08:00" level=info Method=GET RemoteAddress="[::1]:59160" RequestID=039c3cea-befe-4fe5-b9f7-bd5d851cc8fa URL=/vehicles/1235/battery
+time="2020-11-08T16:18:27-08:00" level=info Request=GET./vehicles/1235/battery RequestID=039c3cea-befe-4fe5-b9f7-bd5d851cc8fa Response="{0xc0002234e8}" ResponseCode=200
+time="2020-11-08T16:18:27-08:00" level=info Method=GET RemoteAddress="[::1]:59161" RequestID=53b511e4-4e4a-4964-807e-0a2d55b87194 URL=/vehicles/1236/battery
+time="2020-11-08T16:18:27-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicleEnergyStatus; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#287" ClientError="Failed to get vehicle energy status" Error="Failed to GET vehicle energy status from GM, non-200 response: Vehicle id: 1236 not found. Response code: 404" ErrorCode=500 InternalError="Failed to get vehicle energy status" Request=GET./vehicles/1236/battery RequestID=53b511e4-4e4a-4964-807e-0a2d55b87194
+time="2020-11-08T16:18:27-08:00" level=info Method=POST RemoteAddress="[::1]:59162" RequestID=236e8754-577e-4cf1-a1fe-3f87a6679d5e URL=/vehicles/1234/engine
+time="2020-11-08T16:18:27-08:00" level=error Caller="Called from app_api/apis/vehicle.(*service).SendEngineAction; /Users/andyqi/Desktop/Projects/go/src/SmartCar/apis/vehicle/vehicle.go#147" ClientError="Unsupported engine action option" Error="Unsupported data type: FOOBAR" ErrorCode=500 InternalError="Unsupported engine action option" Request=POST./vehicles/1234/engine RequestID=236e8754-577e-4cf1-a1fe-3f87a6679d5e
+time="2020-11-08T16:18:27-08:00" level=info Method=GET RemoteAddress="[::1]:59163" RequestID=c8a6e64f-f0ac-4a4c-ae11-c1a9d633bcd3 URL=/vehicles/1234/battery
+time="2020-11-08T16:18:27-08:00" level=info Request=GET./vehicles/1234/battery RequestID=c8a6e64f-f0ac-4a4c-ae11-c1a9d633bcd3 Response="{<nil>}" ResponseCode=200
+time="2020-11-08T16:19:02-08:00" level=info Method=GET RemoteAddress="[::1]:59168" RequestID=0694e16f-1000-40d0-a1cf-d4357cd2f674 URL=/vehicles/1234
+time="2020-11-08T16:19:02-08:00" level=info Request=GET./vehicles/1234 RequestID=0694e16f-1000-40d0-a1cf-d4357cd2f674 Response="{123123412412 Metallic Silver 4 v8}" ResponseCode=200
+time="2020-11-08T16:19:02-08:00" level=info Method=POST RemoteAddress="[::1]:59169" RequestID=107ee2fc-6d54-47a8-a75c-cda2b0fbfc1d URL=/vehicles/1234/engine
+time="2020-11-08T16:19:02-08:00" level=info Request=POST./vehicles/1234/engine RequestID=107ee2fc-6d54-47a8-a75c-cda2b0fbfc1d Response="{error}" ResponseCode=200
+time="2020-11-08T16:19:02-08:00" level=info Method=GET RemoteAddress="[::1]:59170" RequestID=86d58113-c7c9-4712-a25e-fd3526896927 URL=/vehicles/1234/doors
+time="2020-11-08T16:19:02-08:00" level=info Request=GET./vehicles/1234/doors RequestID=86d58113-c7c9-4712-a25e-fd3526896927 Response="[{backLeft false} {frontRight false} {frontLeft false} {backRight false}]" ResponseCode=200
+time="2020-11-08T16:19:02-08:00" level=info Method=GET RemoteAddress="[::1]:59171" RequestID=8642f070-56f6-424a-b704-b895144f049e URL=/vehicles/1234/fuel
+time="2020-11-08T16:19:02-08:00" level=info Request=GET./vehicles/1234/fuel RequestID=8642f070-56f6-424a-b704-b895144f049e Response="{0xc0002238d0}" ResponseCode=200
+time="2020-11-08T16:19:02-08:00" level=info Method=GET RemoteAddress="[::1]:59172" RequestID=4bfa0f91-aa69-496f-9673-247758e1c2ec URL=/vehicles/1235/battery
+time="2020-11-08T16:19:02-08:00" level=info Request=GET./vehicles/1235/battery RequestID=4bfa0f91-aa69-496f-9673-247758e1c2ec Response="{0xc000606018}" ResponseCode=200
+time="2020-11-08T16:19:02-08:00" level=info Method=GET RemoteAddress="[::1]:59173" RequestID=fb8d1c9d-3fc4-4b5c-9682-2dddd771c8f4 URL=/vehicles/1236/battery
+time="2020-11-08T16:19:02-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicleEnergyStatus; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#287" ClientError="Failed to get vehicle energy status" Error="Failed to GET vehicle energy status from GM, non-200 response: Vehicle id: 1236 not found. Response code: 404" ErrorCode=500 InternalError="Failed to get vehicle energy status" Request=GET./vehicles/1236/battery RequestID=fb8d1c9d-3fc4-4b5c-9682-2dddd771c8f4
+time="2020-11-08T16:19:02-08:00" level=info Method=POST RemoteAddress="[::1]:59174" RequestID=e34163e2-e883-4377-91b0-d937f93cb0e9 URL=/vehicles/1234/engine
+time="2020-11-08T16:19:02-08:00" level=error Caller="Called from app_api/apis/vehicle.(*service).SendEngineAction; /Users/andyqi/Desktop/Projects/go/src/SmartCar/apis/vehicle/vehicle.go#147" ClientError="Unsupported engine action option" Error="Unsupported data type: FOOBAR" ErrorCode=500 InternalError="Unsupported engine action option" Request=POST./vehicles/1234/engine RequestID=e34163e2-e883-4377-91b0-d937f93cb0e9
+time="2020-11-08T16:19:02-08:00" level=info Method=GET RemoteAddress="[::1]:59175" RequestID=a1c4f2bd-799b-4dee-8755-9fe3c5d16bd8 URL=/vehicles/1234/battery
+time="2020-11-08T16:19:02-08:00" level=info Request=GET./vehicles/1234/battery RequestID=a1c4f2bd-799b-4dee-8755-9fe3c5d16bd8 Response="{<nil>}" ResponseCode=200
+time="2020-11-08T16:19:36-08:00" level=info Method=GET RemoteAddress="[::1]:59179" RequestID=d48ab5b1-9737-4c5b-abdc-8adfadf04962 URL=/vehicles/1234
+time="2020-11-08T16:19:36-08:00" level=info Request=GET./vehicles/1234 RequestID=d48ab5b1-9737-4c5b-abdc-8adfadf04962 Response="{123123412412 Metallic Silver 4 v8}" ResponseCode=200
+time="2020-11-08T16:19:36-08:00" level=info Method=POST RemoteAddress="[::1]:59180" RequestID=c3d29683-399c-4a0c-bbea-bba9550c52b8 URL=/vehicles/1234/engine
+time="2020-11-08T16:19:36-08:00" level=info Request=POST./vehicles/1234/engine RequestID=c3d29683-399c-4a0c-bbea-bba9550c52b8 Response="{error}" ResponseCode=200
+time="2020-11-08T16:19:36-08:00" level=info Method=GET RemoteAddress="[::1]:59181" RequestID=c6ad5f4d-5417-4fbc-8900-361b3a390082 URL=/vehicles/1234/doors
+time="2020-11-08T16:19:36-08:00" level=info Request=GET./vehicles/1234/doors RequestID=c6ad5f4d-5417-4fbc-8900-361b3a390082 Response="[{backLeft false} {backRight true} {frontRight true} {frontLeft true}]" ResponseCode=200
+time="2020-11-08T16:19:36-08:00" level=info Method=GET RemoteAddress="[::1]:59182" RequestID=fbae05d1-f955-4e5e-8e42-b63040d5d310 URL=/vehicles/1234/fuel
+time="2020-11-08T16:19:36-08:00" level=info Request=GET./vehicles/1234/fuel RequestID=fbae05d1-f955-4e5e-8e42-b63040d5d310 Response="{0xc000342390}" ResponseCode=200
+time="2020-11-08T16:19:36-08:00" level=info Method=GET RemoteAddress="[::1]:59183" RequestID=534a6a86-f2a7-414f-ab7b-836a7f56437e URL=/vehicles/1235/battery
+time="2020-11-08T16:19:36-08:00" level=info Request=GET./vehicles/1235/battery RequestID=534a6a86-f2a7-414f-ab7b-836a7f56437e Response="{0xc000098808}" ResponseCode=200
+time="2020-11-08T16:19:36-08:00" level=info Method=GET RemoteAddress="[::1]:59184" RequestID=fee29f85-cc1f-46a1-b1f3-9e66200bcdd4 URL=/vehicles/1236/battery
+time="2020-11-08T16:19:36-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicleEnergyStatus; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#287" ClientError="Failed to get vehicle energy status" Error="Failed to GET vehicle energy status from GM, non-200 response: Vehicle id: 1236 not found. Response code: 404" ErrorCode=500 InternalError="Failed to get vehicle energy status" Request=GET./vehicles/1236/battery RequestID=fee29f85-cc1f-46a1-b1f3-9e66200bcdd4
+time="2020-11-08T16:19:36-08:00" level=info Method=POST RemoteAddress="[::1]:59185" RequestID=622ef08b-80e7-46a5-87e8-bdf64f3ef3df URL=/vehicles/1234/engine
+time="2020-11-08T16:19:36-08:00" level=error Caller="Called from app_api/apis/vehicle.(*service).SendEngineAction; /Users/andyqi/Desktop/Projects/go/src/SmartCar/apis/vehicle/vehicle.go#147" ClientError="Unsupported engine action option" Error="Unsupported data type: FOOBAR" ErrorCode=500 InternalError="Unsupported engine action option" Request=POST./vehicles/1234/engine RequestID=622ef08b-80e7-46a5-87e8-bdf64f3ef3df
+time="2020-11-08T16:19:36-08:00" level=info Method=GET RemoteAddress="[::1]:59186" RequestID=f7a8a71b-8533-4c73-b03a-ad6da34bcfde URL=/vehicles/1234/battery
+time="2020-11-08T16:19:36-08:00" level=info Request=GET./vehicles/1234/battery RequestID=f7a8a71b-8533-4c73-b03a-ad6da34bcfde Response="{<nil>}" ResponseCode=200
+time="2020-11-08T16:21:11-08:00" level=info Method=GET RemoteAddress="[::1]:59193" RequestID=82d99446-d3ae-4eb2-84b9-8ec92d8e7afc URL=/vehicles/1234
+time="2020-11-08T16:21:11-08:00" level=info Request=GET./vehicles/1234 RequestID=82d99446-d3ae-4eb2-84b9-8ec92d8e7afc Response="{123123412412 Metallic Silver 4 v8}" ResponseCode=200
+time="2020-11-08T16:21:12-08:00" level=info Method=POST RemoteAddress="[::1]:59195" RequestID=61dc3596-c6b0-47ca-8076-492bb404ba2f URL=/vehicles/1234/engine
+time="2020-11-08T16:21:12-08:00" level=info Request=POST./vehicles/1234/engine RequestID=61dc3596-c6b0-47ca-8076-492bb404ba2f Response="{error}" ResponseCode=200
+time="2020-11-08T16:21:12-08:00" level=info Method=GET RemoteAddress="[::1]:59196" RequestID=865c7a89-6baa-422a-8dd5-967dfd87121b URL=/vehicles/1234/doors
+time="2020-11-08T16:21:12-08:00" level=info Request=GET./vehicles/1234/doors RequestID=865c7a89-6baa-422a-8dd5-967dfd87121b Response="[{backRight false} {frontRight false} {frontLeft true} {backLeft false}]" ResponseCode=200
+time="2020-11-08T16:21:12-08:00" level=info Method=GET RemoteAddress="[::1]:59197" RequestID=73a67996-bed2-4fc5-8902-c700127785cf URL=/vehicles/1234/fuel
+time="2020-11-08T16:21:12-08:00" level=info Request=GET./vehicles/1234/fuel RequestID=73a67996-bed2-4fc5-8902-c700127785cf Response="{0xc000342170}" ResponseCode=200
+time="2020-11-08T16:21:12-08:00" level=info Method=GET RemoteAddress="[::1]:59198" RequestID=16995348-a915-46b5-a0a9-a6f99222bd3b URL=/vehicles/1235/battery
+time="2020-11-08T16:21:12-08:00" level=info Request=GET./vehicles/1235/battery RequestID=16995348-a915-46b5-a0a9-a6f99222bd3b Response="{0xc000098380}" ResponseCode=200
+time="2020-11-08T16:21:12-08:00" level=info Method=GET RemoteAddress="[::1]:59199" RequestID=7df57ac6-1d18-4fd9-bbcd-a2a5ae0b83c0 URL=/vehicles/1236/battery
+time="2020-11-08T16:21:12-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicleEnergyStatus; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#287" ClientError="Failed to get vehicle energy status" Error="Failed to GET vehicle energy status from GM, non-200 response: Vehicle id: 1236 not found. Response code: 404" ErrorCode=500 InternalError="Failed to get vehicle energy status" Request=GET./vehicles/1236/battery RequestID=7df57ac6-1d18-4fd9-bbcd-a2a5ae0b83c0
+time="2020-11-08T16:21:12-08:00" level=info Method=POST RemoteAddress="[::1]:59200" RequestID=2f9e4c3c-6205-4455-b0dc-fe3bed0e5c0c URL=/vehicles/1234/engine
+time="2020-11-08T16:21:12-08:00" level=error Caller="Called from app_api/apis/vehicle.(*service).SendEngineAction; /Users/andyqi/Desktop/Projects/go/src/SmartCar/apis/vehicle/vehicle.go#147" ClientError="Unsupported engine action option" Error="Unsupported data type: FOOBAR" ErrorCode=500 InternalError="Unsupported engine action option" Request=POST./vehicles/1234/engine RequestID=2f9e4c3c-6205-4455-b0dc-fe3bed0e5c0c
+time="2020-11-08T16:21:12-08:00" level=info Method=GET RemoteAddress="[::1]:59201" RequestID=48497053-376c-4bd3-916b-26d2595e2379 URL=/vehicles/1234/battery
+time="2020-11-08T16:21:12-08:00" level=info Request=GET./vehicles/1234/battery RequestID=48497053-376c-4bd3-916b-26d2595e2379 Response="{<nil>}" ResponseCode=200
+time="2020-11-08T16:22:30-08:00" level=info msg="Starting Server"
+time="2020-11-08T16:22:30-08:00" level=fatal msg="web-server error:listen tcp :8003: bind: address already in use"
+time="2020-11-08T16:23:55-08:00" level=info msg="Starting Server"
+time="2020-11-08T16:24:09-08:00" level=info Method=GET RemoteAddress="[::1]:59245" RequestID=7b089dec-25a0-4a9c-9ae8-b2630a51c578 URL=/vehicles/1234
+time="2020-11-08T16:24:09-08:00" level=info Request=GET./vehicles/1234 RequestID=7b089dec-25a0-4a9c-9ae8-b2630a51c578 Response="{123123412412 Metallic Silver 4 v8}" ResponseCode=200
+time="2020-11-08T16:24:09-08:00" level=info Method=POST RemoteAddress="[::1]:59247" RequestID=ed018f8f-e06d-4cce-be3d-a5a36ccc5ca5 URL=/vehicles/1234/engine
+time="2020-11-08T16:24:09-08:00" level=info Request=POST./vehicles/1234/engine RequestID=ed018f8f-e06d-4cce-be3d-a5a36ccc5ca5 Response="{success}" ResponseCode=200
+time="2020-11-08T16:24:09-08:00" level=info Method=GET RemoteAddress="[::1]:59248" RequestID=0dfa82ee-727a-41c0-9c34-cc3fec7a0550 URL=/vehicles/1234/doors
+time="2020-11-08T16:24:09-08:00" level=info Request=GET./vehicles/1234/doors RequestID=0dfa82ee-727a-41c0-9c34-cc3fec7a0550 Response="[{backRight true} {backLeft true} {frontRight false} {frontLeft false}]" ResponseCode=200
+time="2020-11-08T16:24:09-08:00" level=info Method=GET RemoteAddress="[::1]:59249" RequestID=2cf735c5-3788-4216-81d7-1872a998d0de URL=/vehicles/1234/fuel
+time="2020-11-08T16:24:09-08:00" level=info Request=GET./vehicles/1234/fuel RequestID=2cf735c5-3788-4216-81d7-1872a998d0de Response="{0xc0001ae4f0}" ResponseCode=200
+time="2020-11-08T16:24:09-08:00" level=info Method=GET RemoteAddress="[::1]:59250" RequestID=05613255-2041-42b4-8f6e-8e021a73074f URL=/vehicles/1235/battery
+time="2020-11-08T16:24:09-08:00" level=info Request=GET./vehicles/1235/battery RequestID=05613255-2041-42b4-8f6e-8e021a73074f Response="{0xc000098830}" ResponseCode=200
+time="2020-11-08T16:24:09-08:00" level=info Method=GET RemoteAddress="[::1]:59251" RequestID=7061dc4e-6292-40fc-b107-f26e96226d2c URL=/vehicles/1236/battery
+time="2020-11-08T16:24:09-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicleEnergyStatus; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#287" ClientError="Failed to get vehicle energy status" Error="Failed to GET vehicle energy status from GM, non-200 response: Vehicle id: 1236 not found. Response code: 404" ErrorCode=500 InternalError="Failed to get vehicle energy status" Request=GET./vehicles/1236/battery RequestID=7061dc4e-6292-40fc-b107-f26e96226d2c
+time="2020-11-08T16:24:09-08:00" level=info Method=GET RemoteAddress="[::1]:59252" RequestID=3cb296e0-d7a9-416c-ac56-c1ddd5b3ecfd URL=/vehicles/1234/battery
+time="2020-11-08T16:24:09-08:00" level=info Request=GET./vehicles/1234/battery RequestID=3cb296e0-d7a9-416c-ac56-c1ddd5b3ecfd Response="{<nil>}" ResponseCode=200
+time="2020-11-08T16:24:51-08:00" level=info Method=GET RemoteAddress="[::1]:59259" RequestID=1afcd024-8294-4499-a93c-a8f2a289eb8f URL=/vehicles/1234
+time="2020-11-08T16:24:51-08:00" level=info Request=GET./vehicles/1234 RequestID=1afcd024-8294-4499-a93c-a8f2a289eb8f Response="{123123412412 Metallic Silver 4 v8}" ResponseCode=200
+time="2020-11-08T16:24:51-08:00" level=info Method=POST RemoteAddress="[::1]:59260" RequestID=8327dbc5-b827-4d86-b433-3e4e8f25597c URL=/vehicles/1234/engine
+time="2020-11-08T16:24:51-08:00" level=info Request=POST./vehicles/1234/engine RequestID=8327dbc5-b827-4d86-b433-3e4e8f25597c Response="{success}" ResponseCode=200
+time="2020-11-08T16:24:51-08:00" level=info Method=GET RemoteAddress="[::1]:59261" RequestID=1fd7c5b6-c2b9-4abf-a5c6-10fe120daa9c URL=/vehicles/1234/doors
+time="2020-11-08T16:24:51-08:00" level=info Request=GET./vehicles/1234/doors RequestID=1fd7c5b6-c2b9-4abf-a5c6-10fe120daa9c Response="[{frontLeft false} {backRight true} {frontRight false} {backLeft false}]" ResponseCode=200
+time="2020-11-08T16:24:51-08:00" level=info Method=GET RemoteAddress="[::1]:59262" RequestID=23847573-71ad-4b25-b888-71b3e6b7644d URL=/vehicles/1234/fuel
+time="2020-11-08T16:24:51-08:00" level=info Request=GET./vehicles/1234/fuel RequestID=23847573-71ad-4b25-b888-71b3e6b7644d Response="{0xc0001ae8b0}" ResponseCode=200
+time="2020-11-08T16:24:51-08:00" level=info Method=GET RemoteAddress="[::1]:59263" RequestID=d7e59772-a175-4a1c-b53a-0e722436c5f7 URL=/vehicles/1235/battery
+time="2020-11-08T16:24:51-08:00" level=info Request=GET./vehicles/1235/battery RequestID=d7e59772-a175-4a1c-b53a-0e722436c5f7 Response="{0xc000019960}" ResponseCode=200
+time="2020-11-08T16:24:51-08:00" level=info Method=GET RemoteAddress="[::1]:59264" RequestID=2c4ac2f7-14d6-4c93-b749-afb2d868f666 URL=/vehicles/1236/battery
+time="2020-11-08T16:24:51-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicleEnergyStatus; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#287" ClientError="Failed to get vehicle energy status" Error="Failed to GET vehicle energy status from GM, non-200 response: Vehicle id: 1236 not found. Response code: 404" ErrorCode=500 InternalError="Failed to get vehicle energy status" Request=GET./vehicles/1236/battery RequestID=2c4ac2f7-14d6-4c93-b749-afb2d868f666
+time="2020-11-08T16:24:51-08:00" level=info Method=POST RemoteAddress="[::1]:59265" RequestID=8fa099bc-ebde-4c15-b076-d5e65f4d61f0 URL=/vehicles/1234/engine
+time="2020-11-08T16:24:51-08:00" level=error Caller="Called from app_api/apis/vehicle.(*service).SendEngineAction; /Users/andyqi/Desktop/Projects/go/src/SmartCar/apis/vehicle/vehicle.go#147" ClientError="Unsupported engine action option" Error="Unsupported data type: FOOBAR" ErrorCode=500 InternalError="Unsupported engine action option" Request=POST./vehicles/1234/engine RequestID=8fa099bc-ebde-4c15-b076-d5e65f4d61f0
+time="2020-11-08T16:24:51-08:00" level=info Method=GET RemoteAddress="[::1]:59266" RequestID=90e5c252-74ba-46e7-a397-48425a700d10 URL=/vehicles/1234/battery
+time="2020-11-08T16:24:51-08:00" level=info Request=GET./vehicles/1234/battery RequestID=90e5c252-74ba-46e7-a397-48425a700d10 Response="{<nil>}" ResponseCode=200
+time="2020-11-08T16:25:06-08:00" level=info Method=GET RemoteAddress="[::1]:59270" RequestID=7d47efce-d23a-4dcd-aead-f0fc5206218c URL=/vehicles/1234
+time="2020-11-08T16:25:06-08:00" level=info Request=GET./vehicles/1234 RequestID=7d47efce-d23a-4dcd-aead-f0fc5206218c Response="{123123412412 Metallic Silver 4 v8}" ResponseCode=200
+time="2020-11-08T16:25:06-08:00" level=info Method=POST RemoteAddress="[::1]:59271" RequestID=0f71d9d3-3665-47f6-8f8b-60b5c2e58f3a URL=/vehicles/1234/engine
+time="2020-11-08T16:25:06-08:00" level=info Request=POST./vehicles/1234/engine RequestID=0f71d9d3-3665-47f6-8f8b-60b5c2e58f3a Response="{error}" ResponseCode=200
+time="2020-11-08T16:25:06-08:00" level=info Method=GET RemoteAddress="[::1]:59272" RequestID=a2fc17ee-5ec5-4734-b916-d35c219a86b0 URL=/vehicles/1234/doors
+time="2020-11-08T16:25:06-08:00" level=info Request=GET./vehicles/1234/doors RequestID=a2fc17ee-5ec5-4734-b916-d35c219a86b0 Response="[{backLeft true} {frontRight false} {backRight false} {frontLeft true}]" ResponseCode=200
+time="2020-11-08T16:25:06-08:00" level=info Method=GET RemoteAddress="[::1]:59273" RequestID=55c73860-8ec8-45d2-b566-e2aa584238fb URL=/vehicles/1234/fuel
+time="2020-11-08T16:25:06-08:00" level=info Request=GET./vehicles/1234/fuel RequestID=55c73860-8ec8-45d2-b566-e2aa584238fb Response="{0xc000019d90}" ResponseCode=200
+time="2020-11-08T16:25:06-08:00" level=info Method=GET RemoteAddress="[::1]:59274" RequestID=70fa0a0e-61ea-48e3-af4d-1a3564fe5e63 URL=/vehicles/1235/battery
+time="2020-11-08T16:25:06-08:00" level=info Request=GET./vehicles/1235/battery RequestID=70fa0a0e-61ea-48e3-af4d-1a3564fe5e63 Response="{0xc000098ed0}" ResponseCode=200
+time="2020-11-08T16:25:06-08:00" level=info Method=GET RemoteAddress="[::1]:59275" RequestID=bc531e40-144d-4bb4-ab3f-e7e7c0cf5765 URL=/vehicles/1236/battery
+time="2020-11-08T16:25:06-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicleEnergyStatus; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#287" ClientError="Failed to get vehicle energy status" Error="Failed to GET vehicle energy status from GM, non-200 response: Vehicle id: 1236 not found. Response code: 404" ErrorCode=500 InternalError="Failed to get vehicle energy status" Request=GET./vehicles/1236/battery RequestID=bc531e40-144d-4bb4-ab3f-e7e7c0cf5765
+time="2020-11-08T16:25:06-08:00" level=info Method=POST RemoteAddress="[::1]:59276" RequestID=9eb198d6-91b7-46f6-b8f5-83ee71351b3f URL=/vehicles/1234/engine
+time="2020-11-08T16:25:06-08:00" level=error Caller="Called from app_api/apis/vehicle.(*service).SendEngineAction; /Users/andyqi/Desktop/Projects/go/src/SmartCar/apis/vehicle/vehicle.go#147" ClientError="Unsupported engine action option" Error="Unsupported data type: FOOBAR" ErrorCode=500 InternalError="Unsupported engine action option" Request=POST./vehicles/1234/engine RequestID=9eb198d6-91b7-46f6-b8f5-83ee71351b3f
+time="2020-11-08T16:25:06-08:00" level=info Method=GET RemoteAddress="[::1]:59277" RequestID=925d97c6-0563-4e8b-a951-5492bca05cd9 URL=/vehicles/1234/battery
+time="2020-11-08T16:25:06-08:00" level=info Request=GET./vehicles/1234/battery RequestID=925d97c6-0563-4e8b-a951-5492bca05cd9 Response="{<nil>}" ResponseCode=200
+time="2020-11-08T16:27:03-08:00" level=info Method=GET RemoteAddress="[::1]:59301" RequestID=79abbea6-99ee-45b4-8425-546be5567d57 URL=/vehicles/1234
+time="2020-11-08T16:27:03-08:00" level=info Request=GET./vehicles/1234 RequestID=79abbea6-99ee-45b4-8425-546be5567d57 Response="{123123412412 Metallic Silver 4 v8}" ResponseCode=200
+time="2020-11-08T16:27:03-08:00" level=info Method=POST RemoteAddress="[::1]:59303" RequestID=7a85ca84-7d40-416e-a601-dacb87f871fd URL=/vehicles/1234/engine
+time="2020-11-08T16:27:03-08:00" level=info Request=POST./vehicles/1234/engine RequestID=7a85ca84-7d40-416e-a601-dacb87f871fd Response="{error}" ResponseCode=200
+time="2020-11-08T16:27:03-08:00" level=info Method=GET RemoteAddress="[::1]:59304" RequestID=65a4a497-0f0c-46fd-a459-22a44a22d5d7 URL=/vehicles/1234/doors
+time="2020-11-08T16:27:03-08:00" level=info Request=GET./vehicles/1234/doors RequestID=65a4a497-0f0c-46fd-a459-22a44a22d5d7 Response="[{backLeft false} {backRight true} {frontLeft true} {frontRight true}]" ResponseCode=200
+time="2020-11-08T16:27:03-08:00" level=info Method=GET RemoteAddress="[::1]:59305" RequestID=ab5159d0-f04f-49dd-9279-6a3cf68c41e1 URL=/vehicles/1234/fuel
+time="2020-11-08T16:27:03-08:00" level=info Request=GET./vehicles/1234/fuel RequestID=ab5159d0-f04f-49dd-9279-6a3cf68c41e1 Response="{0xc000174250}" ResponseCode=200
+time="2020-11-08T16:27:03-08:00" level=info Method=GET RemoteAddress="[::1]:59306" RequestID=83d1a013-6ff7-4e5d-babd-9af187199f40 URL=/vehicles/1235/battery
+time="2020-11-08T16:27:03-08:00" level=info Request=GET./vehicles/1235/battery RequestID=83d1a013-6ff7-4e5d-babd-9af187199f40 Response="{0xc000099198}" ResponseCode=200
+time="2020-11-08T16:27:03-08:00" level=info Method=GET RemoteAddress="[::1]:59307" RequestID=2922d312-23fa-4fae-9f4d-a53b3286f1c3 URL=/vehicles/1236/battery
+time="2020-11-08T16:27:03-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicleEnergyStatus; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#287" ClientError="Failed to get vehicle energy status" Error="Failed to GET vehicle energy status from GM, non-200 response: Vehicle id: 1236 not found. Response code: 404" ErrorCode=500 InternalError="Failed to get vehicle energy status" Request=GET./vehicles/1236/battery RequestID=2922d312-23fa-4fae-9f4d-a53b3286f1c3
+time="2020-11-08T16:27:03-08:00" level=info Method=POST RemoteAddress="[::1]:59308" RequestID=dffa5ed7-c481-48e4-ba57-209cad6aabf4 URL=/vehicles/1234/engine
+time="2020-11-08T16:27:03-08:00" level=error Caller="Called from app_api/apis/vehicle.(*service).SendEngineAction; /Users/andyqi/Desktop/Projects/go/src/SmartCar/apis/vehicle/vehicle.go#147" ClientError="Unsupported engine action option" Error="Unsupported data type: FOOBAR" ErrorCode=500 InternalError="Unsupported engine action option" Request=POST./vehicles/1234/engine RequestID=dffa5ed7-c481-48e4-ba57-209cad6aabf4
+time="2020-11-08T16:27:14-08:00" level=info Method=GET RemoteAddress="[::1]:59313" RequestID=bc3dba57-59b1-435f-b63f-99df09246941 URL=/vehicles/1234
+time="2020-11-08T16:27:14-08:00" level=info Request=GET./vehicles/1234 RequestID=bc3dba57-59b1-435f-b63f-99df09246941 Response="{123123412412 Metallic Silver 4 v8}" ResponseCode=200
+time="2020-11-08T16:27:14-08:00" level=info Method=POST RemoteAddress="[::1]:59314" RequestID=330a9934-e4ad-4729-8456-6147313d184c URL=/vehicles/1234/engine
+time="2020-11-08T16:27:14-08:00" level=info Request=POST./vehicles/1234/engine RequestID=330a9934-e4ad-4729-8456-6147313d184c Response="{error}" ResponseCode=200
+time="2020-11-08T16:27:14-08:00" level=info Method=GET RemoteAddress="[::1]:59315" RequestID=4f22a3f5-404d-46b2-a9a3-a2da2c314b2d URL=/vehicles/1234/doors
+time="2020-11-08T16:27:15-08:00" level=info Request=GET./vehicles/1234/doors RequestID=4f22a3f5-404d-46b2-a9a3-a2da2c314b2d Response="[{backRight false} {frontRight false} {backLeft false} {frontLeft true}]" ResponseCode=200
+time="2020-11-08T16:27:15-08:00" level=info Method=GET RemoteAddress="[::1]:59316" RequestID=253c7a67-e560-4439-9c89-6913524e0f2c URL=/vehicles/1234/fuel
+time="2020-11-08T16:27:15-08:00" level=info Request=GET./vehicles/1234/fuel RequestID=253c7a67-e560-4439-9c89-6913524e0f2c Response="{0xc000099490}" ResponseCode=200
+time="2020-11-08T16:27:15-08:00" level=info Method=GET RemoteAddress="[::1]:59317" RequestID=1d1222b3-16cc-4efd-9005-61243ae7e550 URL=/vehicles/1235/battery
+time="2020-11-08T16:27:15-08:00" level=info Request=GET./vehicles/1235/battery RequestID=1d1222b3-16cc-4efd-9005-61243ae7e550 Response="{0xc0001af5e8}" ResponseCode=200
+time="2020-11-08T16:27:15-08:00" level=info Method=GET RemoteAddress="[::1]:59318" RequestID=d6d83464-fe60-44c6-9ff5-57ba7c521f26 URL=/vehicles/1236/battery
+time="2020-11-08T16:27:15-08:00" level=error Caller="Called from app_api/shared/gm.(*gmAPIConnector).GetVehicleEnergyStatus; /Users/andyqi/Desktop/Projects/go/src/SmartCar/shared/gm/gm_connector.go#287" ClientError="Failed to get vehicle energy status" Error="Failed to GET vehicle energy status from GM, non-200 response: Vehicle id: 1236 not found. Response code: 404" ErrorCode=500 InternalError="Failed to get vehicle energy status" Request=GET./vehicles/1236/battery RequestID=d6d83464-fe60-44c6-9ff5-57ba7c521f26
+time="2020-11-08T16:27:15-08:00" level=info Method=POST RemoteAddress="[::1]:59319" RequestID=d5bc1829-7fd7-4d0f-99b8-417733709134 URL=/vehicles/1234/engine
+time="2020-11-08T16:27:15-08:00" level=error Caller="Called from app_api/apis/vehicle.(*service).SendEngineAction; /Users/andyqi/Desktop/Projects/go/src/SmartCar/apis/vehicle/vehicle.go#147" ClientError="Unsupported engine action option" Error="Unsupported data type: FOOBAR" ErrorCode=500 InternalError="Unsupported engine action option" Request=POST./vehicles/1234/engine RequestID=d5bc1829-7fd7-4d0f-99b8-417733709134
+time="2020-11-08T16:27:15-08:00" level=info Method=GET RemoteAddress="[::1]:59320" RequestID=5aa0e808-1591-4d7f-ab29-b4c0961bafdf URL=/vehicles/1234/battery
+time="2020-11-08T16:27:15-08:00" level=info Request=GET./vehicles/1234/battery RequestID=5aa0e808-1591-4d7f-ab29-b4c0961bafdf Response="{<nil>}" ResponseCode=200

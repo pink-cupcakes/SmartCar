@@ -67,6 +67,7 @@ func (env *Env) getVehicle(w http.ResponseWriter, r *http.Request) {
 
 	vehicleInfo, apiErr := env.Services.VehicleService.GetVehicle(vehicleID)
 
+	// NewResponse ... is a wrapper that has error checking and logging, and sends a response to the client
 	httphelper.NewResponse(ctx, w, vehicleInfo, apiErr)
 	return
 }

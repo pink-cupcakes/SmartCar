@@ -76,7 +76,7 @@ func (s *service) GetVehicleDoors(vehicleID int64) (res []gmConnector.GMVehicleD
 	return
 }
 
-// GetVehicleFuel ... returns the status of the fiel for a given car
+// GetVehicleFuel ... returns the status of the fuel for a given car
 func (s *service) GetVehicleFuel(vehicleID int64) (res Fuel, err *shared.APIError) {
 	fuel, _, err := s.gm.GetVehicleEnergyStatus(vehicleID)
 	if err != nil {
